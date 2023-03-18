@@ -25,8 +25,9 @@ public class MenuController : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && _window == 1)
+        if(CloseSettings.closeSettingsStatus || Input.GetKeyDown(KeyCode.Escape) && _window == 1)
         {
+            CloseSettings.closeSettingsStatus = false;
             animator.SetTrigger("HideOptions");
             _window = 0;
         }
