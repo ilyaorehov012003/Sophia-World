@@ -11,6 +11,9 @@ public class GameController : MonoBehaviour
     public ChooseController chooseController;
     public AudioController audioController;
 
+    private Animator animator;
+    //private int _window = 0;
+
     public DataHolder data;
 
     public string menuScene;
@@ -26,6 +29,7 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        animator = GetComponent<Animator>();
         if (SaveManager.IsGameSaved())
         {
             SaveData data = SaveManager.LoadGame();
@@ -115,6 +119,18 @@ public class GameController : MonoBehaviour
     public void PlayScene(GameScene scene, int sentenceIndex = -1, bool isAnimated = true)
     {
         StartCoroutine(SwitchScene(scene, sentenceIndex, isAnimated));
+    }
+
+    public void ShowInventory()
+    {
+        animator.SetTrigger("ShowInventory");
+        //_window = 1;
+    }
+
+    public void HideInventory()
+    {
+        animator.SetTrigger("HideInventory");
+        //_window = 0;
     }
 
     private IEnumerator SwitchScene(GameScene scene, int sentenceIndex = -1, bool isAnimated = true)

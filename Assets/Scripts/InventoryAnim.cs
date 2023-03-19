@@ -14,8 +14,8 @@ public class InventoryAnim : MonoBehaviour
 
     public void CloseDialog()
     {
-        gameObject.SetActive(false);
-        //box.LeanMoveLocalY(-Screen.height, 0.5f).setEaseInExpo().setOnComplete(Complete);
+        box.LeanMoveLocalY(0.5f, 0).setEaseOutExpo().delay = 0.1f;
+        Debug.Log("Окно закрыто");
     }
 
     void Complete()

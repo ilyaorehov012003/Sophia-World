@@ -15,7 +15,7 @@ public class MenuController : MonoBehaviour
     public Button loadButton;
 
     private Animator animator;
-    private int _window = 0;
+    //private int _window = 0;
 
     public void Start()
     {
@@ -23,7 +23,7 @@ public class MenuController : MonoBehaviour
         loadButton.interactable = SaveManager.IsGameSaved();
     }
 
-    public void Update()
+    /*public void Update()
     {
         if(CloseSettings.closeSettingsStatus || Input.GetKeyDown(KeyCode.Escape) && _window == 1)
         {
@@ -31,7 +31,7 @@ public class MenuController : MonoBehaviour
             animator.SetTrigger("HideOptions");
             _window = 0;
         }
-    }
+    }*/
 
     public void NewGame()
     {
@@ -45,10 +45,16 @@ public class MenuController : MonoBehaviour
     }
 
     public void ShowOptions()
-     {
+    {
          animator.SetTrigger("ShowOptions");
-        _window = 1;
-     }
+        //_window = 1;
+    }
+
+    public void HideOptions()
+    {
+        animator.SetTrigger("HideOptions");
+        //_window = 1;
+    }
 
     public void Quit()
     {
