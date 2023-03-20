@@ -77,7 +77,7 @@ public class GameController : MonoBehaviour
                     bottomBar.SpeedUp();
                 }
             }
-            if (Input.GetMouseButtonDown(1))
+            /*if (Input.GetMouseButtonDown(1))
             {
                 if (bottomBar.IsFirstSentence())
                 {
@@ -95,9 +95,9 @@ public class GameController : MonoBehaviour
                 {
                     bottomBar.GoBack();
                 }
-            }
+            }*/
             //if (Input.GetKeyDown(KeyCode.Escape))
-            if (GoToMenu.menuStatus)
+            /*if (GoToMenu.menuStatus)
             {
                 GoToMenu.menuStatus = false;
                 List<int> historyIndicies = new List<int>();
@@ -112,7 +112,7 @@ public class GameController : MonoBehaviour
                 };
                 SaveManager.SaveGame(data);
                 SceneManager.LoadScene(menuScene);
-            }
+            }*/
         }
     }
 
@@ -131,6 +131,23 @@ public class GameController : MonoBehaviour
     {
         animator.SetTrigger("HideInventory");
         //_window = 0;
+    }
+
+    public void GoToMenu()
+    {
+        //GoToMenu.menuStatus = false;
+        List<int> historyIndicies = new List<int>();
+        history.ForEach(scene =>
+        {
+            historyIndicies.Add(this.data.scenes.IndexOf(scene));
+        });
+        SaveData data = new SaveData
+        {
+            sentence = bottomBar.GetSentenceIndex(),
+            prevScenes = historyIndicies
+        };
+        SaveManager.SaveGame(data);
+        SceneManager.LoadScene(menuScene);
     }
 
     private IEnumerator SwitchScene(GameScene scene, int sentenceIndex = -1, bool isAnimated = true)
