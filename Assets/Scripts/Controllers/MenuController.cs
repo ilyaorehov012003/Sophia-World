@@ -56,6 +56,26 @@ public class MenuController : MonoBehaviour
         //_window = 1;
     }
 
+    public void ShowNewGame()
+    {
+        animator.SetTrigger("ShowNewGame");
+    }
+
+    public void HideNewGame()
+    {
+        animator.SetTrigger("HideNewGame");
+    }
+
+    public void QuitShow()
+    {
+        animator.SetTrigger("ShowQuit");
+    }
+
+    public void QuitHide()
+    {
+        animator.SetTrigger("HideQuit");
+    }
+
     public void Quit()
     {
         Application.Quit();
