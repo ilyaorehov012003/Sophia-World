@@ -26,7 +26,7 @@ public class BottomBarController : MonoBehaviour
         PLAYING, SPEEDED_UP, COMPLETED
     }
 
-    /*public void Update()
+    public void Update()
     {
         if (currentScene.number == 1)
         {
@@ -38,7 +38,7 @@ public class BottomBarController : MonoBehaviour
         {
             Debug.Log("Открывается сцена с открытием письма ,,Кто ты,, ");
         }
-    }*/
+    }
 
     private void Start()
     {
@@ -116,8 +116,9 @@ public class BottomBarController : MonoBehaviour
     public void SpeedUp()
     {
         //state = State.SPEEDED_UP;
-        speedFactor = 0.00000000001f;
+        //speedFactor = 0.00000000001f;
         //speedFactor = 0.25f;
+        speedFactor = -100000f;
     }
 
     public void StopTyping()
