@@ -35,6 +35,7 @@ public class MenuController : MonoBehaviour
 
     public void NewGame()
     {
+        Letters.letter1 = false;
         SaveManager.ClearSavedGame();
         Load();
     }

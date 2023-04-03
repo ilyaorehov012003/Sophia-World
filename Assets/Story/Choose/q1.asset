@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa21d4123d556443abbbad79a10b72f, type: 3}
+  m_Name: q1
+  m_EditorClassIdentifier: 
+  labels:
+  - text: "\u0414\u0443\u043C\u0430\u0435\u0448\u044C \u0442\u0430\u043A \u0431\u0443\u0434\u0435\u0442? "
+    nextScene: {fileID: 11400000, guid: 6e618ed20322c73449a82c11b16b914a, type: 2}
+  - text: "\u041D\u0435 \u043D\u0435\u0441\u0438 \u0447\u0435\u043F\u0443\u0445\u0438"
+    nextScene: {fileID: 11400000, guid: 2e1be490d92799e459caf4fb56a6d599, type: 2}
+  - text: "\u041C\u044B \u0434\u043E \u044D\u0442\u043E\u0433\u043E \u043D\u0435
+      \u0434\u043E\u0436\u0438\u0432\u0435\u043C, \u044D\u0442\u043E \u0431\u0443\u0434\u0435\u0442
+      \u043E\u0447\u0435\u043D\u044C \u0438 \u043E\u0447\u0435\u043D\u044C \u043D\u0435\u0441\u043A\u043E\u0440\u043E. "
+    nextScene: {fileID: 11400000, guid: 37034ca9751c42b47921274cc90232ea, type: 2}

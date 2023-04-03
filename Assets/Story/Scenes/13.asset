@@ -10,16 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
-  m_Name: 4
+  m_Name: 13
   m_EditorClassIdentifier: 
-  sentences:
-  - text: "*\u0438\u0433\u0440\u0430 \u043F\u043E\u0434\u0431\u0435\u0440\u0438 \u043A\u043B\u044E\u0447*"
-    audio: {fileID: 0}
-    speaker: {fileID: 0}
-    actions: []
-    music: {fileID: 0}
-    sound: {fileID: 0}
-  background: {fileID: 21300000, guid: 007d30d537ae02443a352aeb107f75d8, type: 3}
-  nextScene: {fileID: 11400000, guid: 17d42267e75bf1a4fa91cf7962e31648, type: 2}
+  sentences: []
+  background: {fileID: 0}
+  nextScene: {fileID: 0}
   number: 0
   forLetter: 0

@@ -26,6 +26,20 @@ public class BottomBarController : MonoBehaviour
         PLAYING, SPEEDED_UP, COMPLETED
     }
 
+    /*public void Update()
+    {
+        if (currentScene.number == 1)
+        {
+            Letters.letter1 = true;
+            Debug.Log("София получила письмо № 1");
+        }
+        
+        if(currentScene.forLetter == 1 && Letters.letter1 == true)
+        {
+            Debug.Log("Открывается сцена с открытием письма ,,Кто ты,, ");
+        }
+    }*/
+
     private void Start()
     {
         sprites = new Dictionary<Speaker, SpriteController>();
@@ -101,8 +115,8 @@ public class BottomBarController : MonoBehaviour
 
     public void SpeedUp()
     {
-        state = State.SPEEDED_UP;
-        speedFactor = 0.001f;
+        //state = State.SPEEDED_UP;
+        speedFactor = 0.00000000001f;
         //speedFactor = 0.25f;
     }
 

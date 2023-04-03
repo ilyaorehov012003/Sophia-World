@@ -22,6 +22,10 @@ public class GameController : MonoBehaviour
 
     private List<StoryScene> history = new List<StoryScene>();
 
+    public bool game_letter1;
+
+    public GameObject ImageLetter1;
+
     private enum State
     {
         IDLE, ANIMATE, CHOOSE
@@ -49,10 +53,26 @@ public class GameController : MonoBehaviour
             backgroundController.SetImage(storyScene.background);
             PlayAudio(storyScene.sentences[bottomBar.GetSentenceIndex()]);
         }
+
+        if (Letters.letter1 == true)
+        {
+            ImageLetter1.SetActive(true);
+            Debug.Log("Письмо 1 открыто");
+        }
+
+        if (Letters.letter1 == false)
+        {
+            Debug.Log("Письмо 1 закрыто");
+        }
     }
 
     void Update()
     {
+        if (Letters.letter1 == true)
+        {
+            ImageLetter1.SetActive(true);
+            Debug.Log("Письмо 1 открыто");
+        }
         if (state == State.IDLE) {
             //if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             if(NextSentence.nextSentenceStatus)
@@ -144,7 +164,8 @@ public class GameController : MonoBehaviour
         SaveData data = new SaveData
         {
             sentence = bottomBar.GetSentenceIndex(),
-            prevScenes = historyIndicies
+            prevScenes = historyIndicies,
+            letter1 = game_letter1
         };
         SaveManager.SaveGame(data);
         SceneManager.LoadScene(menuScene);
