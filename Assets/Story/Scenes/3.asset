@@ -22,7 +22,7 @@ MonoBehaviour:
     actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
-  background: {fileID: 21300000, guid: 54d933c202111384b944f52b311cc00a, type: 3}
+  background: {fileID: 21300000, guid: 3df087c9601f77d4393703d92a9770f9, type: 3}
   nextScene: {fileID: 11400000, guid: 095df350a399993459dcce301dc763c7, type: 2}
   number: 0
   forLetter: 0

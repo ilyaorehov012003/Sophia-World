@@ -2175,6 +2175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentScene: {fileID: 11400000, guid: 8157eee26ed449e4180b2df48a5f5257, type: 2}
+  Scene1p2: {fileID: 11400000, guid: 71d6a4d251b265e44abd8aafa4e4f24e, type: 2}
   bottomBar: {fileID: 455100601}
   backgroundController: {fileID: 48699395}
   chooseController: {fileID: 1548364065}

@@ -33,17 +33,23 @@ public class BottomBarController : MonoBehaviour
             Letters.letter1 = true;
             Debug.Log("София получила письмо № 1");
         }
-        
-        if(currentScene.forLetter == 1 && Letters.letter1 == true)
+
+        /*if (currentScene.number == 11)
         {
-            Debug.Log("Открывается сцена с открытием письма ,,Кто ты,, ");
-        }
+            GameController.PlayScene1();
+            Debug.Log("Сцена пропущена, так как письмо 'Кто ты?' не прочитано");
+        }*/
     }
 
     private void Start()
     {
         sprites = new Dictionary<Speaker, SpriteController>();
         animator = GetComponent<Animator>();
+    }
+
+    public int GetSceneNumber()
+    {
+        return currentScene.number;
     }
 
     public int GetSentenceIndex()

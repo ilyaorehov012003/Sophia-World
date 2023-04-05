@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public GameScene currentScene;
+    public GameScene Scene1p2;
     public BottomBarController bottomBar;
     public SpriteSwitcher backgroundController;
     public ChooseController chooseController;
@@ -81,6 +82,13 @@ public class GameController : MonoBehaviour
                 if (bottomBar.IsCompleted())
                 {
                     bottomBar.StopTyping();
+
+                    if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 11)
+                    {
+                        PlayScene((Scene1p2 as StoryScene).nextScene); // Scene1p2 - предыдущая сцена перед той, на которую будет переходить
+                    }
+
+
                     if (bottomBar.IsLastSentence())
                     {
                         PlayScene((currentScene as StoryScene).nextScene);

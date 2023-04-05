@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenes:
   - {fileID: 11400000, guid: 8157eee26ed449e4180b2df48a5f5257, type: 2}
+  - {fileID: 11400000, guid: bbff44e09dd9c0f438387a9b9a2649d5, type: 2}
   - {fileID: 11400000, guid: 6e618ed20322c73449a82c11b16b914a, type: 2}
   - {fileID: 11400000, guid: 2e1be490d92799e459caf4fb56a6d599, type: 2}
   - {fileID: 11400000, guid: 37034ca9751c42b47921274cc90232ea, type: 2}

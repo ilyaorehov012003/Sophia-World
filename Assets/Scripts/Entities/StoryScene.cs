@@ -9,7 +9,6 @@ public class StoryScene : GameScene
     public Sprite background;
     public GameScene nextScene;
     public int number;
-    public int forLetter;
 
     [System.Serializable]
     public struct Sentence
