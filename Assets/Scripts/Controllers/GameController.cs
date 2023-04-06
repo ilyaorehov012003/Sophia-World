@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public GameScene currentScene;
-    public GameScene Scene1p2;
+    public GameScene Scene9_1;
+    public GameScene Scene14;
     public BottomBarController bottomBar;
     public SpriteSwitcher backgroundController;
     public ChooseController chooseController;
@@ -58,12 +59,12 @@ public class GameController : MonoBehaviour
         if (Letters.letter1 == true)
         {
             ImageLetter1.SetActive(true);
-            Debug.Log("Письмо 1 открыто");
+            Debug.Log("РџРёСЃСЊРјРѕ 1 РѕС‚РєСЂС‹С‚Рѕ");
         }
 
         if (Letters.letter1 == false)
         {
-            Debug.Log("Письмо 1 закрыто");
+            Debug.Log("РџРёСЃСЊРјРѕ 1 Р·Р°РєСЂС‹С‚Рѕ");
         }
     }
 
@@ -72,7 +73,7 @@ public class GameController : MonoBehaviour
         if (Letters.letter1 == true)
         {
             ImageLetter1.SetActive(true);
-            Debug.Log("Письмо 1 открыто");
+            Debug.Log("РџРёСЃСЊРјРѕ 1 РѕС‚РєСЂС‹С‚Рѕ");
         }
         if (state == State.IDLE) {
             //if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
@@ -83,13 +84,17 @@ public class GameController : MonoBehaviour
                 {
                     bottomBar.StopTyping();
 
-                    if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 11)
+                    if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 911 && Letters.letter1 == false)
                     {
-                        PlayScene((Scene1p2 as StoryScene).nextScene); // Scene1p2 - предыдущая сцена перед той, на которую будет переходить
+                        PlayScene(Scene9_1);
                     }
 
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 1214 && Letters.letter1 == false)
+                    {
+                        PlayScene(Scene14);
+                    }
 
-                    if (bottomBar.IsLastSentence())
+                    else if (bottomBar.IsLastSentence())
                     {
                         PlayScene((currentScene as StoryScene).nextScene);
                     }
