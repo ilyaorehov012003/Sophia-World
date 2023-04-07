@@ -34,6 +34,12 @@ public class BottomBarController : MonoBehaviour
             Debug.Log("София получила письмо № 1");
         }
 
+        if (currentScene.number == 2)
+        {
+            Letters.letter2 = true;
+            Debug.Log("София получила письмо № 2");
+        }
+
         /*if (currentScene.number == 11)
         {
             GameController.PlayScene1();
@@ -121,9 +127,6 @@ public class BottomBarController : MonoBehaviour
 
     public void SpeedUp()
     {
-        //state = State.SPEEDED_UP;
-        //speedFactor = 0.00000000001f;
-        //speedFactor = 0.25f;
         speedFactor = -100000f;
     }
 

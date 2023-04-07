@@ -8,6 +8,11 @@ public class GameController : MonoBehaviour
     public GameScene currentScene;
     public GameScene Scene9_1;
     public GameScene Scene14;
+    public GameScene Scene17;
+    public GameScene Scene20;
+    public GameScene Scene20_1;
+    public GameScene Scene20_2; 
+    public GameScene Scene20_3;
     public BottomBarController bottomBar;
     public SpriteSwitcher backgroundController;
     public ChooseController chooseController;
@@ -24,9 +29,11 @@ public class GameController : MonoBehaviour
 
     private List<StoryScene> history = new List<StoryScene>();
 
-    public bool game_letter1;
+    //public bool game_letter1;
+    //public bool game_letter2;
 
     public GameObject ImageLetter1;
+    public GameObject ImageLetter2;
 
     private enum State
     {
@@ -46,6 +53,8 @@ public class GameController : MonoBehaviour
             currentScene = history[history.Count - 1];
             history.RemoveAt(history.Count - 1);
             bottomBar.SetSentenceIndex(data.sentence - 1);
+            Letters.letter1 = data.letter1;
+            Letters.letter2 = data.letter2;
         }
         if (currentScene is StoryScene)
         {
@@ -56,16 +65,16 @@ public class GameController : MonoBehaviour
             PlayAudio(storyScene.sentences[bottomBar.GetSentenceIndex()]);
         }
 
-        if (Letters.letter1 == true)
+        /*if (Letters.letter1 == true)
         {
-            ImageLetter1.SetActive(true);
+            //ImageLetter1.SetActive(true);
             Debug.Log("Письмо 1 открыто");
         }
 
-        if (Letters.letter1 == false)
+        if (Letters.letter2 == true)
         {
-            Debug.Log("Письмо 1 закрыто");
-        }
+            Debug.Log("Письмо 2 закрыто");
+        }*/
     }
 
     void Update()
@@ -75,6 +84,13 @@ public class GameController : MonoBehaviour
             ImageLetter1.SetActive(true);
             Debug.Log("Письмо 1 открыто");
         }
+
+        if (Letters.letter2 == true)
+        {
+            ImageLetter2.SetActive(true);
+            Debug.Log("Письмо 2 открыто");
+        }
+
         if (state == State.IDLE) {
             //if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             if(NextSentence.nextSentenceStatus)
@@ -92,6 +108,19 @@ public class GameController : MonoBehaviour
                     else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 1214 && Letters.letter1 == false)
                     {
                         PlayScene(Scene14);
+                    }
+
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 1517 && Letters.letter1 == false)
+                    {
+                        PlayScene(Scene17);
+                    }
+
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 1920)
+                    {
+                        if (Letters.letter1 == true && Letters.letter2 == true) PlayScene(Scene20);
+                        else if (Letters.letter1 == true && Letters.letter2 == false) PlayScene(Scene20_1);
+                        else if (Letters.letter1 == false && Letters.letter2 == true) PlayScene(Scene20_2);
+                        else PlayScene(Scene20_3);
                     }
 
                     else if (bottomBar.IsLastSentence())
@@ -178,7 +207,8 @@ public class GameController : MonoBehaviour
         {
             sentence = bottomBar.GetSentenceIndex(),
             prevScenes = historyIndicies,
-            letter1 = game_letter1
+            letter1 = Letters.letter1,
+            letter2 = Letters.letter2
         };
         SaveManager.SaveGame(data);
         SceneManager.LoadScene(menuScene);

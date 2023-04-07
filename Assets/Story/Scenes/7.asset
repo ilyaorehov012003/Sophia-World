@@ -16,7 +16,7 @@ MonoBehaviour:
   - text: "*\u0421\u043E\u0444\u0438\u044F \u0447\u0438\u0442\u0430\u0435\u0442 \u043F\u0438\u0441\u044C\u043C\u043E
       \"\u041A\u0442\u043E \u0442\u044B\"*"
     audio: {fileID: 0}
-    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    speaker: {fileID: 11400000, guid: c6c568251b5bc13448f5a6698f239af0, type: 2}
     actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
@@ -27,7 +27,7 @@ MonoBehaviour:
       \u0435\u0439 14 \u043B\u0435\u0442, \u0438\u043D\u0430\u0447\u0435 \u0438 \u0431\u044B\u0442\u044C
       \u043D\u0435 \u043C\u043E\u0436\u0435\u0442."
     audio: {fileID: 0}
-    speaker: {fileID: 0}
+    speaker: {fileID: 11400000, guid: c6c568251b5bc13448f5a6698f239af0, type: 2}
     actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
