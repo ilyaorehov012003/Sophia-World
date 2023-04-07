@@ -35,6 +35,9 @@ public class GameController : MonoBehaviour
     public GameObject ImageLetter1;
     public GameObject ImageLetter2;
 
+    public GameObject ImageLetterText1;
+    public GameObject ImageLetterText2;
+
     private enum State
     {
         IDLE, ANIMATE, CHOOSE
@@ -193,6 +196,30 @@ public class GameController : MonoBehaviour
     {
         animator.SetTrigger("HideInventory");
         //_window = 0;
+    }
+
+    public void ShowLetter1()
+    {
+        ImageLetterText1.SetActive(true);
+        animator.SetTrigger("ShowLetters");
+        Debug.Log("Анимация открытия письма 1");
+    }
+
+    public void ShowLetter2()
+    {
+        ImageLetterText2.SetActive(true);
+        animator.SetTrigger("ShowLetters");
+        Debug.Log("Анимация открытия письма 2");
+    }
+
+    public void HideLetter()
+    {
+        animator.SetTrigger("HideLetters");
+    }
+
+    public void ShowLettersPart2()
+    {
+        animator.SetTrigger("ShowLettersPart2");
     }
 
     public void GoToMenu()
