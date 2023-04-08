@@ -21,6 +21,9 @@ public class BottomBarController : MonoBehaviour
     private Coroutine typingCoroutine;
     private float speedFactor = 1f;
 
+    public GameObject OpenImageLetterText1;
+    public GameObject OpenImageLetterText2;
+
     private enum State
     {
         PLAYING, SPEEDED_UP, COMPLETED

@@ -209,7 +209,7 @@ public class GameController : MonoBehaviour
     {
         ImageLetterText2.SetActive(true);
         animator.SetTrigger("ShowLetters");
-        Debug.Log("Анимация открытия письма 2");
+        Debug.Log("Анимация открытия письма 1");
     }
 
     public void HideLetter()
