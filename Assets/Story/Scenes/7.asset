@@ -20,17 +20,6 @@ MonoBehaviour:
     actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "\u0421\u043E\u0444\u0438\u044F \u043F\u0440\u0438\u0448\u043B\u0430 \u0432
-      \u0437\u0430\u043C\u0435\u0448\u0430\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u043E.
-      \u0412\u0435\u0434\u044C \u043E\u043D\u0430 \u0437\u043D\u0430\u043B\u0430,
-      \u0447\u0442\u043E \u043E\u043D\u0430 \u0421\u043E\u0444\u0438\u044F \u0410\u043C\u0443\u043D\u043D\u0441\u0435\u043D,
-      \u0435\u0439 14 \u043B\u0435\u0442, \u0438\u043D\u0430\u0447\u0435 \u0438 \u0431\u044B\u0442\u044C
-      \u043D\u0435 \u043C\u043E\u0436\u0435\u0442."
-    audio: {fileID: 0}
-    speaker: {fileID: 11400000, guid: c6c568251b5bc13448f5a6698f239af0, type: 2}
-    actions: []
-    music: {fileID: 0}
-    sound: {fileID: 0}
   background: {fileID: 21300000, guid: 2c62c50379bff7440b3707ca435a40a9, type: 3}
-  nextScene: {fileID: 11400000, guid: 19b0659c5b031204b8fd929243c7cf62, type: 2}
+  nextScene: {fileID: 11400000, guid: 8319836d3c4927a4bacf212140e59597, type: 2}
   number: 1

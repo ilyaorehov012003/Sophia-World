@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public GameScene currentScene;
+    public GameScene Scene7p2;
     public GameScene Scene9_1;
     public GameScene Scene14;
     public GameScene Scene17;
@@ -38,6 +39,11 @@ public class GameController : MonoBehaviour
     public GameObject ImageLetterText1;
     public GameObject ImageLetterText2;
 
+    private bool isWork1 = true;
+    private bool isWork2 = true;
+
+    //private bool gameKey = true;
+
     private enum State
     {
         IDLE, ANIMATE, CHOOSE
@@ -58,6 +64,7 @@ public class GameController : MonoBehaviour
             bottomBar.SetSentenceIndex(data.sentence - 1);
             Letters.letter1 = data.letter1;
             Letters.letter2 = data.letter2;
+            Letters.gameKeyStatus = data.keyGame;
         }
         if (currentScene is StoryScene)
         {
@@ -92,6 +99,40 @@ public class GameController : MonoBehaviour
         {
             ImageLetter2.SetActive(true);
             Debug.Log("Письмо 2 открыто");
+        }
+
+        if(bottomBar.GetSceneNumber() == 1 && isWork1 == true)
+        {
+            isWork1 = false;
+            ShowLetter1();
+        }
+
+        if (bottomBar.GetSceneNumber() == 2 && isWork2 == true)
+        {
+            isWork2 = false;
+            ShowLetter2();
+        }
+
+        if (Letters.gameKeyStatus == true)
+        {
+            Debug.Log("Игра 'Подбери ключ'");
+            Letters.gameKeyStatus = false;
+
+            List<int> historyIndicies = new List<int>();
+            history.ForEach(scene =>
+            {
+                historyIndicies.Add(this.data.scenes.IndexOf(scene));
+            });
+            SaveData data = new SaveData
+            {
+                sentence = bottomBar.GetSentenceIndex(),
+                prevScenes = historyIndicies,
+                letter1 = Letters.letter1,
+                letter2 = Letters.letter2,
+                keyGame = Letters.gameKeyStatus
+            };
+            SaveManager.SaveGame(data);
+            SceneManager.LoadScene("KeyGame");
         }
 
         if (state == State.IDLE) {
@@ -210,6 +251,18 @@ public class GameController : MonoBehaviour
         ImageLetterText2.SetActive(true);
         animator.SetTrigger("ShowLetters");
         Debug.Log("Анимация открытия письма 1");
+    }
+
+    public void ShowTextLetter1()
+    {
+        ImageLetterText1.SetActive(true);
+        animator.SetTrigger("ShowTextLetter1");
+    }
+
+    public void ShowTextLetter2()
+    {
+        ImageLetterText2.SetActive(true);
+        animator.SetTrigger("ShowTextLetter1");
     }
 
     public void HideLetter()

@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoadScene.unity
     guid: f4286f0601fabec47a64af370e20ce8d
+  - enabled: 1
+    path: Assets/Scenes/OpenDoorGame.unity
+    guid: eed0389edcff804488acdea9c41a41cf
+  - enabled: 1
+    path: Assets/Scenes/KeyGame.unity
+    guid: afa3a2b397b30a546b7a4de9184f25e6
   m_configObjects: {}

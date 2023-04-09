@@ -7,4 +7,5 @@ public class Letters : MonoBehaviour
 {
     public static bool letter1;
     public static bool letter2;
+    public static bool gameKeyStatus;
 }

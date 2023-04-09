@@ -39,8 +39,14 @@ public class BottomBarController : MonoBehaviour
 
         if (currentScene.number == 2)
         {
-            Letters.letter2 = true;
+            Letters.letter2 = true; Letters.gameKeyStatus = true;
             Debug.Log("София получила письмо № 2");
+        }
+
+        if (currentScene.number == 100)
+        {
+            Letters.gameKeyStatus = true;
+            currentScene.number = 0;
         }
 
         /*if (currentScene.number == 11)
