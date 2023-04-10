@@ -23,6 +23,7 @@ public class BottomBarController : MonoBehaviour
 
     public GameObject OpenImageLetterText1;
     public GameObject OpenImageLetterText2;
+    public GameObject OpenImageLetterText3;
 
     private enum State
     {
@@ -39,15 +40,20 @@ public class BottomBarController : MonoBehaviour
 
         if (currentScene.number == 2)
         {
-            Letters.letter2 = true; Letters.gameKeyStatus = true;
+            Letters.letter2 = true;
             Debug.Log("София получила письмо № 2");
         }
 
-        if (currentScene.number == 100)
+        if (currentScene.number == 3)
         {
-            Letters.gameKeyStatus = true;
-            currentScene.number = 0;
+            Letters.letter3 = true;
+            Debug.Log("София получила письмо № 3");
         }
+
+        /*if (currentScene.number == 100)
+        {
+            currentScene.number = 0;
+        }*/
 
         /*if (currentScene.number == 11)
         {

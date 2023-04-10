@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/KeyGame.unity
     guid: afa3a2b397b30a546b7a4de9184f25e6
+  - enabled: 1
+    path: Assets/Scenes/MapGame.unity
+    guid: 529e7dbaf617e904c869a3badca5bdc9
+  - enabled: 1
+    path: Assets/Scenes/VideoInSchool.unity
+    guid: 76051e4e3d071c142853ef6ec38a7735
   m_configObjects: {}

@@ -6,8 +6,11 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public GameScene currentScene;
+    public StoryScene Scene4;
+    public StoryScene Scene4_1;
     public GameScene Scene7p2;
     public GameScene Scene9_1;
+    public StoryScene Scene11_1;
     public GameScene Scene14;
     public GameScene Scene17;
     public GameScene Scene20;
@@ -35,12 +38,15 @@ public class GameController : MonoBehaviour
 
     public GameObject ImageLetter1;
     public GameObject ImageLetter2;
+    public GameObject ImageLetter3;
 
     public GameObject ImageLetterText1;
     public GameObject ImageLetterText2;
+    public GameObject ImageLetterText3;
 
     private bool isWork1 = true;
     private bool isWork2 = true;
+    private bool isWork3 = true;
 
     //private bool gameKey = true;
 
@@ -64,7 +70,7 @@ public class GameController : MonoBehaviour
             bottomBar.SetSentenceIndex(data.sentence - 1);
             Letters.letter1 = data.letter1;
             Letters.letter2 = data.letter2;
-            Letters.gameKeyStatus = data.keyGame;
+            Letters.letter3 = data.letter3;
         }
         if (currentScene is StoryScene)
         {
@@ -73,6 +79,13 @@ public class GameController : MonoBehaviour
             bottomBar.PlayScene(storyScene, bottomBar.GetSentenceIndex());
             backgroundController.SetImage(storyScene.background);
             PlayAudio(storyScene.sentences[bottomBar.GetSentenceIndex()]);
+        }
+
+        if (SaveManager.IsGameSaved() == false)
+        {
+            Scene4.number = 100;
+            Scene4_1.number = 100;
+            Scene11_1.number = 101;
         }
 
         /*if (Letters.letter1 == true)
@@ -101,7 +114,13 @@ public class GameController : MonoBehaviour
             Debug.Log("Письмо 2 открыто");
         }
 
-        if(bottomBar.GetSceneNumber() == 1 && isWork1 == true)
+        if (Letters.letter3 == true)
+        {
+            ImageLetter3.SetActive(true);
+            Debug.Log("Письмо 3 открыто");
+        }
+
+        if (bottomBar.GetSceneNumber() == 1 && isWork1 == true)
         {
             isWork1 = false;
             ShowLetter1();
@@ -113,10 +132,17 @@ public class GameController : MonoBehaviour
             ShowLetter2();
         }
 
-        if (Letters.gameKeyStatus == true)
+        if (bottomBar.GetSceneNumber() == 3 && isWork3 == true)
+        {
+            isWork3 = false;
+            ShowLetter3();
+        }
+
+        if (bottomBar.GetSceneNumber() == 100)
         {
             Debug.Log("Игра 'Подбери ключ'");
-            Letters.gameKeyStatus = false;
+            Scene4.number = 0;
+            Scene4_1.number = 0;
 
             List<int> historyIndicies = new List<int>();
             history.ForEach(scene =>
@@ -129,10 +155,32 @@ public class GameController : MonoBehaviour
                 prevScenes = historyIndicies,
                 letter1 = Letters.letter1,
                 letter2 = Letters.letter2,
-                keyGame = Letters.gameKeyStatus
+                letter3 = Letters.letter3
             };
             SaveManager.SaveGame(data);
             SceneManager.LoadScene("KeyGame");
+        }
+
+        if (bottomBar.GetSceneNumber() == 101)
+        {
+            Debug.Log("Игра 'Отметь на карте'");
+            Scene11_1.number = 0;
+
+            List<int> historyIndicies = new List<int>();
+            history.ForEach(scene =>
+            {
+                historyIndicies.Add(this.data.scenes.IndexOf(scene));
+            });
+            SaveData data = new SaveData
+            {
+                sentence = bottomBar.GetSentenceIndex(),
+                prevScenes = historyIndicies,
+                letter1 = Letters.letter1,
+                letter2 = Letters.letter2,
+                letter3 = Letters.letter3
+            };
+            SaveManager.SaveGame(data);
+            SceneManager.LoadScene("MapGame");
         }
 
         if (state == State.IDLE) {
@@ -253,6 +301,13 @@ public class GameController : MonoBehaviour
         Debug.Log("Анимация открытия письма 1");
     }
 
+    public void ShowLetter3()
+    {
+        ImageLetterText3.SetActive(true);
+        animator.SetTrigger("ShowLetters");
+        Debug.Log("Анимация открытия письма 1");
+    }
+
     public void ShowTextLetter1()
     {
         ImageLetterText1.SetActive(true);
@@ -262,6 +317,12 @@ public class GameController : MonoBehaviour
     public void ShowTextLetter2()
     {
         ImageLetterText2.SetActive(true);
+        animator.SetTrigger("ShowTextLetter1");
+    }
+
+    public void ShowTextLetter3()
+    {
+        ImageLetterText3.SetActive(true);
         animator.SetTrigger("ShowTextLetter1");
     }
 
