@@ -71,6 +71,9 @@ public class GameController : MonoBehaviour
             Letters.letter1 = data.letter1;
             Letters.letter2 = data.letter2;
             Letters.letter3 = data.letter3;
+            Letters.GameKeyStatus = data.keyStatus;
+            Letters.GameMapStatus = data.mapStatus;
+            Letters.VideoStatus = data.videoStatus;
         }
         if (currentScene is StoryScene)
         {
@@ -81,12 +84,12 @@ public class GameController : MonoBehaviour
             PlayAudio(storyScene.sentences[bottomBar.GetSentenceIndex()]);
         }
 
-        if (SaveManager.IsGameSaved() == false)
+        /*if (SaveManager.IsGameSaved() == false)
         {
             Scene4.number = 100;
             Scene4_1.number = 100;
             Scene11_1.number = 101;
-        }
+        }*/
 
         /*if (Letters.letter1 == true)
         {
@@ -138,11 +141,12 @@ public class GameController : MonoBehaviour
             ShowLetter3();
         }
 
-        if (bottomBar.GetSceneNumber() == 100)
+        if (bottomBar.GetSceneNumber() == 100 && Letters.GameKeyStatus == true)
         {
             Debug.Log("Игра 'Подбери ключ'");
-            Scene4.number = 0;
-            Scene4_1.number = 0;
+            Letters.GameKeyStatus = false;
+            //Scene4.number = 0;
+            //Scene4_1.number = 0;
 
             List<int> historyIndicies = new List<int>();
             history.ForEach(scene =>
@@ -155,16 +159,20 @@ public class GameController : MonoBehaviour
                 prevScenes = historyIndicies,
                 letter1 = Letters.letter1,
                 letter2 = Letters.letter2,
-                letter3 = Letters.letter3
+                letter3 = Letters.letter3,
+                keyStatus = Letters.GameKeyStatus,
+                mapStatus = Letters.GameMapStatus,
+                videoStatus = Letters.VideoStatus
             };
             SaveManager.SaveGame(data);
             SceneManager.LoadScene("KeyGame");
         }
 
-        if (bottomBar.GetSceneNumber() == 101)
+        if (bottomBar.GetSceneNumber() == 101 && Letters.GameMapStatus == true)
         {
             Debug.Log("Игра 'Отметь на карте'");
-            Scene11_1.number = 0;
+            //Scene11_1.number = 0;
+            Letters.GameMapStatus = false;
 
             List<int> historyIndicies = new List<int>();
             history.ForEach(scene =>
@@ -177,10 +185,39 @@ public class GameController : MonoBehaviour
                 prevScenes = historyIndicies,
                 letter1 = Letters.letter1,
                 letter2 = Letters.letter2,
-                letter3 = Letters.letter3
+                letter3 = Letters.letter3,
+                keyStatus = Letters.GameKeyStatus,
+                mapStatus = Letters.GameMapStatus,
+                videoStatus = Letters.VideoStatus
             };
             SaveManager.SaveGame(data);
             SceneManager.LoadScene("MapGame");
+        }
+
+        if (bottomBar.GetSceneNumber() == 102 && Letters.VideoStatus == true)
+        {
+            Debug.Log("Игра 'Отметь на карте'");
+            //Scene11_1.number = 0;
+            Letters.VideoStatus = false;
+
+            List<int> historyIndicies = new List<int>();
+            history.ForEach(scene =>
+            {
+                historyIndicies.Add(this.data.scenes.IndexOf(scene));
+            });
+            SaveData data = new SaveData
+            {
+                sentence = bottomBar.GetSentenceIndex(),
+                prevScenes = historyIndicies,
+                letter1 = Letters.letter1,
+                letter2 = Letters.letter2,
+                letter3 = Letters.letter3,
+                keyStatus = Letters.GameKeyStatus,
+                mapStatus = Letters.GameMapStatus,
+                videoStatus = Letters.VideoStatus
+            };
+            SaveManager.SaveGame(data);
+            SceneManager.LoadScene("VideoInSchool");
         }
 
         if (state == State.IDLE) {
@@ -349,7 +386,11 @@ public class GameController : MonoBehaviour
             sentence = bottomBar.GetSentenceIndex(),
             prevScenes = historyIndicies,
             letter1 = Letters.letter1,
-            letter2 = Letters.letter2
+            letter2 = Letters.letter2,
+            letter3 = Letters.letter3,
+            keyStatus = Letters.GameKeyStatus,
+            mapStatus = Letters.GameMapStatus,
+            videoStatus = Letters.VideoStatus
         };
         SaveManager.SaveGame(data);
         SceneManager.LoadScene(menuScene);

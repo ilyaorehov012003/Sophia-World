@@ -7,5 +7,7 @@ public struct SaveData
     public bool letter1;
     public bool letter2;
     public bool letter3;
-    public bool keyGame;
+    public bool keyStatus;
+    public bool mapStatus;
+    public bool videoStatus;
 }
