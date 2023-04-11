@@ -196,7 +196,7 @@ public class GameController : MonoBehaviour
 
         if (bottomBar.GetSceneNumber() == 102 && Letters.VideoStatus == true)
         {
-            Debug.Log("Игра 'Отметь на карте'");
+            Debug.Log("Просмотр видео 'София читает сочинение'");
             //Scene11_1.number = 0;
             Letters.VideoStatus = false;
 

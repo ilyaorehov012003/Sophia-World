@@ -5,20 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class GameKeyScript : MonoBehaviour
 {
-    //private bool GameKeyStatus = false;
+    private Animator animator;
 
-    /*void Update()
+    public void Start()
     {
-        if (GameKeyStatus == true)
-        {
-            Debug.Log("Кнопка нажата");
-        }
-    }*/
+        animator = GetComponent<Animator>();
+    }
 
     public void GoToGame()
     {
-        //GameKeyStatus = true;
         Debug.Log("Кнопка нажата");
         SceneManager.LoadScene("LoadScene");
+    }
+
+    public void KeyLose1()
+    {
+        animator.SetTrigger("KeyLose1");
+    }
+
+    public void KeyLose2()
+    {
+        animator.SetTrigger("KeyLose2");
+    }
+
+    public void KeyLose4()
+    {
+        animator.SetTrigger("KeyLose4");
     }
 }

@@ -27,6 +27,31 @@ public class MapKeyScript : MonoBehaviour
         animator.SetTrigger("Lose3");
     }
 
+    public void Marker4()
+    {
+        animator.SetTrigger("Lose4");
+    }
+
+    public void Marker5()
+    {
+        animator.SetTrigger("Lose5");
+    }
+
+    public void Marker6()
+    {
+        animator.SetTrigger("Lose6");
+    }
+
+    public void Marker7()
+    {
+        animator.SetTrigger("Lose7");
+    }
+
+    public void Marker8()
+    {
+        animator.SetTrigger("Lose8");
+    }
+
     public void ReadHistory()
     {
         Debug.Log("Читает историю");

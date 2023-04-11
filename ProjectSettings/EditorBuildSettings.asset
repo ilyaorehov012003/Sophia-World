@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VideoInSchool.unity
     guid: 76051e4e3d071c142853ef6ec38a7735
+  - enabled: 1
+    path: Assets/Scenes/FinalScene.unity
+    guid: 07e343c777c6d2d458e149cb609cba91
   m_configObjects: {}
