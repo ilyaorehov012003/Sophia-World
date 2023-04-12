@@ -35,7 +35,7 @@ MonoBehaviour:
     actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "\u0422\u044B \u0421\u043E\u0444\u0438. "
+  - text: "\u0422\u044B, \u0421\u043E\u0444\u0438. "
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 0f7829bf947ba734e8b73f9e9a884532, type: 2}
     actions: []

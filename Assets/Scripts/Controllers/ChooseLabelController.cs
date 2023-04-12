@@ -24,6 +24,7 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
     public void Setup(ChooseScene.ChooseLabel label, ChooseController controller, float y)
     {
         scene = label.nextScene;
+        textMesh.font = FontFromChoose.fontChoices;
         textMesh.text = label.text;
         this.controller = controller;
 

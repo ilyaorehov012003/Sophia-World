@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   labels:
   - text: "\u042F \u043D\u0435 \u043F\u0438\u0441\u0430\u043B\u0430 \u044D\u0442\u043E
-      \u0441\u043E\u0447\u0438\u043D\u0435\u043D\u0438\u0435."
+      \u0441\u043E\u0447\u0438\u043D\u0435\u043D\u0438\u0435"
     nextScene: {fileID: 11400000, guid: 705178cb69c85a549940ba55ac16fdd0, type: 2}
-  - text: "\u042F \u0433\u043E\u0442\u043E\u0432\u0438\u043B\u0430\u0441\u044C."
+  - text: "\u042F \u0433\u043E\u0442\u043E\u0432\u0438\u043B\u0430\u0441\u044C"
     nextScene: {fileID: 11400000, guid: 387e039efb3d18f44835641d3da7e30b, type: 2}
-  - text: "\u042D\u0442\u043E \u043D\u0435 \u043C\u043E\u0435 \u0441\u043E\u0447\u0438\u043D\u0435\u043D\u0438\u0435."
+  - text: "\u042D\u0442\u043E \u043D\u0435 \u043C\u043E\u0435 \u0441\u043E\u0447\u0438\u043D\u0435\u043D\u0438\u0435"
     nextScene: {fileID: 11400000, guid: 8aeda6aa36186cb42ac82ba2e1e64c62, type: 2}

@@ -38,6 +38,10 @@ public class MenuController : MonoBehaviour
         Letters.letter1 = false;
         Letters.letter2 = false;
         Letters.letter3 = false;
+        Letters.letter4 = false;
+        Letters.letter5 = false;
+        Letters.letter6 = false;
+        Letters.letter7 = false;
         Letters.GameKeyStatus = true;
         Letters.GameMapStatus = true;
         Letters.VideoStatus = true;

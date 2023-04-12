@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: q32
   m_EditorClassIdentifier: 
   labels:
-  - text: "\u0412 \u0441\u0430\u0434\u0443. "
+  - text: "\u0412 \u0441\u0430\u0434\u0443"
     nextScene: {fileID: 11400000, guid: 6b5238949db20e74ca6db22f572393a9, type: 2}
-  - text: "\u0414\u043E\u043C\u0430. "
+  - text: "\u0414\u043E\u043C\u0430"
     nextScene: {fileID: 11400000, guid: bb63bf9517ac34345a037df70ffc0d16, type: 2}
-  - text: "\u0412 \u043A\u0430\u0444\u0435. "
+  - text: "\u0412 \u043A\u0430\u0444\u0435"
     nextScene: {fileID: 11400000, guid: f9e4b749d594a084e80a9ce91a001042, type: 2}

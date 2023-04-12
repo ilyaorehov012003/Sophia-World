@@ -39,14 +39,23 @@ public class GameController : MonoBehaviour
     public GameObject ImageLetter1;
     public GameObject ImageLetter2;
     public GameObject ImageLetter3;
+    public GameObject ImageLetter6;
 
     public GameObject ImageLetterText1;
     public GameObject ImageLetterText2;
     public GameObject ImageLetterText3;
+    public GameObject ImageLetterText4;
+    public GameObject ImageLetterText5;
+    public GameObject ImageLetterText6;
+    public GameObject ImageLetterText7;
 
     private bool isWork1 = true;
     private bool isWork2 = true;
     private bool isWork3 = true;
+    private bool isWork4 = true;
+    private bool isWork5 = true;
+    private bool isWork6 = true;
+    private bool isWork7 = true;
 
     //private bool gameKey = true;
 
@@ -123,6 +132,12 @@ public class GameController : MonoBehaviour
             Debug.Log("Письмо 3 открыто");
         }
 
+        if (Letters.letter6 == true)
+        {
+            ImageLetter6.SetActive(true);
+            Debug.Log("Письмо 6 открыто");
+        }
+
         if (bottomBar.GetSceneNumber() == 1 && isWork1 == true)
         {
             isWork1 = false;
@@ -139,6 +154,30 @@ public class GameController : MonoBehaviour
         {
             isWork3 = false;
             ShowLetter3();
+        }
+
+        if (bottomBar.GetSceneNumber() == 4 && isWork4 == true)
+        {
+            isWork4 = false;
+            ShowLetter4();
+        }
+
+        if (bottomBar.GetSceneNumber() == 5 && isWork5 == true)
+        {
+            isWork5 = false;
+            ShowLetter5();
+        }
+
+        if (bottomBar.GetSceneNumber() == 6 && isWork6 == true)
+        {
+            isWork6 = false;
+            ShowLetter6();
+        }
+
+        if (bottomBar.GetSceneNumber() == 7 && isWork7 == true && bottomBar.IsLastSentence())
+        {
+            isWork7 = false;
+            ShowLetter7();
         }
 
         if (bottomBar.GetSceneNumber() == 100 && Letters.GameKeyStatus == true)
@@ -160,6 +199,10 @@ public class GameController : MonoBehaviour
                 letter1 = Letters.letter1,
                 letter2 = Letters.letter2,
                 letter3 = Letters.letter3,
+                letter4 = Letters.letter4,
+                letter5 = Letters.letter5,
+                letter6 = Letters.letter6,
+                letter7 = Letters.letter7,
                 keyStatus = Letters.GameKeyStatus,
                 mapStatus = Letters.GameMapStatus,
                 videoStatus = Letters.VideoStatus
@@ -186,6 +229,10 @@ public class GameController : MonoBehaviour
                 letter1 = Letters.letter1,
                 letter2 = Letters.letter2,
                 letter3 = Letters.letter3,
+                letter4 = Letters.letter4,
+                letter5 = Letters.letter5,
+                letter6 = Letters.letter6,
+                letter7 = Letters.letter7,
                 keyStatus = Letters.GameKeyStatus,
                 mapStatus = Letters.GameMapStatus,
                 videoStatus = Letters.VideoStatus
@@ -194,7 +241,7 @@ public class GameController : MonoBehaviour
             SceneManager.LoadScene("MapGame");
         }
 
-        if (bottomBar.GetSceneNumber() == 102 && Letters.VideoStatus == true)
+        if (bottomBar.GetSceneNumber() == 102 && Letters.VideoStatus == true && bottomBar.IsLastSentence())
         {
             Debug.Log("Просмотр видео 'София читает сочинение'");
             //Scene11_1.number = 0;
@@ -212,6 +259,10 @@ public class GameController : MonoBehaviour
                 letter1 = Letters.letter1,
                 letter2 = Letters.letter2,
                 letter3 = Letters.letter3,
+                letter4 = Letters.letter4,
+                letter5 = Letters.letter5,
+                letter6 = Letters.letter6,
+                letter7 = Letters.letter7,
                 keyStatus = Letters.GameKeyStatus,
                 mapStatus = Letters.GameMapStatus,
                 videoStatus = Letters.VideoStatus
@@ -345,6 +396,34 @@ public class GameController : MonoBehaviour
         Debug.Log("Анимация открытия письма 1");
     }
 
+    public void ShowLetter4()
+    {
+        ImageLetterText4.SetActive(true);
+        animator.SetTrigger("ShowLetter4from7");
+        Debug.Log("Анимация открытия письма 4");
+    }
+
+    public void ShowLetter5()
+    {
+        ImageLetterText5.SetActive(true);
+        animator.SetTrigger("ShowLetter4from7");
+        Debug.Log("Анимация открытия письма 5");
+    }
+
+    public void ShowLetter6()
+    {
+        ImageLetterText6.SetActive(true);
+        animator.SetTrigger("ShowLetter6");
+        Debug.Log("Анимация открытия письма 6");
+    }
+
+    public void ShowLetter7()
+    {
+        ImageLetterText7.SetActive(true);
+        animator.SetTrigger("ShowLetter4from7");
+        Debug.Log("Анимация открытия письма 7");
+    }
+
     public void ShowTextLetter1()
     {
         ImageLetterText1.SetActive(true);
@@ -361,6 +440,12 @@ public class GameController : MonoBehaviour
     {
         ImageLetterText3.SetActive(true);
         animator.SetTrigger("ShowTextLetter1");
+    }
+
+    public void ShowTextLetter6()
+    {
+        ImageLetterText6.SetActive(true);
+        animator.SetTrigger("ShowLetter6");
     }
 
     public void HideLetter()
@@ -388,6 +473,10 @@ public class GameController : MonoBehaviour
             letter1 = Letters.letter1,
             letter2 = Letters.letter2,
             letter3 = Letters.letter3,
+            letter4 = Letters.letter4,
+            letter5 = Letters.letter5,
+            letter6 = Letters.letter6,
+            letter7 = Letters.letter7,
             keyStatus = Letters.GameKeyStatus,
             mapStatus = Letters.GameMapStatus,
             videoStatus = Letters.VideoStatus

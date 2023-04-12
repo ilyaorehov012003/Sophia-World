@@ -15,10 +15,10 @@ MonoBehaviour:
   sentences:
   - text: "*\u0421\u043E\u0444\u0438\u044F \u0447\u0438\u0442\u0430\u0435\u0442 \u043E\u0442\u043A\u0440\u044B\u0442\u043A\u0443*"
     audio: {fileID: 0}
-    speaker: {fileID: 0}
+    speaker: {fileID: 11400000, guid: c6c568251b5bc13448f5a6698f239af0, type: 2}
     actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
   background: {fileID: 21300000, guid: 6b06ca3d45f94d4469a61fef5d7fcc65, type: 3}
   nextScene: {fileID: 11400000, guid: 909563cf67e72694eb8c29ca29c21f8c, type: 2}
-  number: 0
+  number: 6

@@ -7,7 +7,7 @@ public class VideoScript : MonoBehaviour
 {
     void Start()
     {
-        StartCoroutine(Co_WaitForSeconds(128f)); // 128f - длина видео в секундах
+        StartCoroutine(Co_WaitForSeconds(130f)); // 130f - длина видео в секундах
     }
 
     private IEnumerator Co_WaitForSeconds(float value)

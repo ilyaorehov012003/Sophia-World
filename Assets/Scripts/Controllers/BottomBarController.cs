@@ -21,9 +21,13 @@ public class BottomBarController : MonoBehaviour
     private Coroutine typingCoroutine;
     private float speedFactor = 1f;
 
-    public GameObject OpenImageLetterText1;
+    /*public GameObject OpenImageLetterText1;
     public GameObject OpenImageLetterText2;
     public GameObject OpenImageLetterText3;
+    public GameObject OpenImageLetterText4;
+    public GameObject OpenImageLetterText5;
+    public GameObject OpenImageLetterText6;
+    public GameObject OpenImageLetterText7;*/
 
     private enum State
     {
@@ -48,6 +52,12 @@ public class BottomBarController : MonoBehaviour
         {
             Letters.letter3 = true;
             Debug.Log("София получила письмо № 3");
+        }
+
+        if (currentScene.number == 6)
+        {
+            Letters.letter6 = true;
+            Debug.Log("София получила письмо № 6");
         }
 
         /*if (currentScene.number == 100)
@@ -142,7 +152,7 @@ public class BottomBarController : MonoBehaviour
 
     public void SpeedUp()
     {
-        speedFactor = 0f;
+        speedFactor = 0.1f;
     }
 
     public void StopTyping()

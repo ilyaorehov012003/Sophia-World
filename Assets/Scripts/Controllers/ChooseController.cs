@@ -5,6 +5,7 @@ using TMPro;
 
 public class ChooseController : MonoBehaviour
 {
+    public TMP_FontAsset fontFromChoices;
     public ChooseLabelController label;
     public GameController gameController;
     private RectTransform rectTransform;
@@ -15,6 +16,7 @@ public class ChooseController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rectTransform = GetComponent<RectTransform>();
+        FontFromChoose.fontChoices = fontFromChoices;
     }
 
     public void SetupChoose(ChooseScene scene)

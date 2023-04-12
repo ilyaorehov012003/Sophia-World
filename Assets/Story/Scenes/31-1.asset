@@ -21,4 +21,4 @@ MonoBehaviour:
     sound: {fileID: 0}
   background: {fileID: 21300000, guid: df601c24ae88fb64fa9665850a2cb652, type: 3}
   nextScene: {fileID: 11400000, guid: 70a6bf80a4448bf469adb22be267ea22, type: 2}
-  number: 0
+  number: 4
