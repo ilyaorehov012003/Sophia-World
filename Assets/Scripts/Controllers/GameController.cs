@@ -17,6 +17,8 @@ public class GameController : MonoBehaviour
     public GameScene Scene20_1;
     public GameScene Scene20_2; 
     public GameScene Scene20_3;
+    public GameScene Scene37_2;
+    public GameScene Scene39;
     public BottomBarController bottomBar;
     public SpriteSwitcher backgroundController;
     public ChooseController chooseController;
@@ -174,7 +176,7 @@ public class GameController : MonoBehaviour
             ShowLetter6();
         }
 
-        if (bottomBar.GetSceneNumber() == 7 && isWork7 == true && bottomBar.IsLastSentence())
+        if (bottomBar.GetSceneNumber() == 7 && bottomBar.IsLastSentence() && isWork7 == true)
         {
             isWork7 = false;
             ShowLetter7();
@@ -293,6 +295,16 @@ public class GameController : MonoBehaviour
                     else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 1517 && Letters.letter1 == false)
                     {
                         PlayScene(Scene17);
+                    }
+
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 37372 && Letters.letter1 == false)
+                    {
+                        PlayScene(Scene37_2);
+                    }
+
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 3839 && Letters.letter1 == true)
+                    {
+                        PlayScene(Scene39);
                     }
 
                     else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 1920)
