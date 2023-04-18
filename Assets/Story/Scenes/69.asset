@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
-  m_Name: 39
+  m_Name: 69
   m_EditorClassIdentifier: 
   sentences:
-  - text: "*\u0421\u043E\u0444\u0438\u044F \u0432\u0441\u043A\u0440\u044B\u0432\u0430\u0435\u0442
-      \u043A\u043E\u043D\u0432\u0435\u0440\u0442 \u0438 \u0434\u043E\u0441\u0442\u0430\u0451\u0442
+  - text: "*\u0412 \u043A\u043E\u043C\u043D\u0430\u0442\u0443 \u0437\u0430\u0445\u043E\u0434\u0438\u0442
+      \u043C\u0430\u043C\u0430 \u0438 \u0432\u043A\u043B\u044E\u0447\u0430\u0435\u0442
       \u043A\u0430\u0441\u0441\u0435\u0442\u0443*"
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: c6c568251b5bc13448f5a6698f239af0, type: 2}
     actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
-  background: {fileID: 21300000, guid: 7e0c51f38d0b8fe4a9252ed8e7cd2309, type: 3}
-  nextScene: {fileID: 11400000, guid: afaf1eb82c122fc49854c33067e7d6e5, type: 2}
+  background: {fileID: 21300000, guid: 43e02745ec656a741bb962f0a196e79f, type: 3}
+  nextScene: {fileID: 11400000, guid: f90f894a90c2d08499a898e2e3dd6759, type: 2}
   number: 0
