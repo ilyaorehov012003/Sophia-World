@@ -189,7 +189,9 @@ public class GameController : MonoBehaviour
             //Scene4.number = 0;
             //Scene4_1.number = 0;
 
-            List<int> historyIndicies = new List<int>();
+            SaveGameData();
+
+            /*List<int> historyIndicies = new List<int>();
             history.ForEach(scene =>
             {
                 historyIndicies.Add(this.data.scenes.IndexOf(scene));
@@ -209,7 +211,7 @@ public class GameController : MonoBehaviour
                 mapStatus = Letters.GameMapStatus,
                 videoStatus = Letters.VideoStatus
             };
-            SaveManager.SaveGame(data);
+            SaveManager.SaveGame(data);*/
             SceneManager.LoadScene("KeyGame");
         }
 
@@ -219,11 +221,13 @@ public class GameController : MonoBehaviour
             //Scene11_1.number = 0;
             Letters.GameMapStatus = false;
 
-            List<int> historyIndicies = new List<int>();
+            SaveGameData();
+            /*List<int> historyIndicies = new List<int>();
             history.ForEach(scene =>
             {
                 historyIndicies.Add(this.data.scenes.IndexOf(scene));
             });
+
             SaveData data = new SaveData
             {
                 sentence = bottomBar.GetSentenceIndex(),
@@ -239,7 +243,7 @@ public class GameController : MonoBehaviour
                 mapStatus = Letters.GameMapStatus,
                 videoStatus = Letters.VideoStatus
             };
-            SaveManager.SaveGame(data);
+            SaveManager.SaveGame(data);*/
             SceneManager.LoadScene("MapGame");
         }
 
@@ -249,11 +253,14 @@ public class GameController : MonoBehaviour
             //Scene11_1.number = 0;
             Letters.VideoStatus = false;
 
-            List<int> historyIndicies = new List<int>();
+            SaveGameData();
+
+            /*List<int> historyIndicies = new List<int>();
             history.ForEach(scene =>
             {
                 historyIndicies.Add(this.data.scenes.IndexOf(scene));
             });
+
             SaveData data = new SaveData
             {
                 sentence = bottomBar.GetSentenceIndex(),
@@ -269,8 +276,14 @@ public class GameController : MonoBehaviour
                 mapStatus = Letters.GameMapStatus,
                 videoStatus = Letters.VideoStatus
             };
-            SaveManager.SaveGame(data);
+            SaveManager.SaveGame(data);*/
             SceneManager.LoadScene("VideoInSchool");
+        }
+
+        if (bottomBar.GetSceneNumber() == 1000 && bottomBar.IsLastSentence())
+        {
+            SaveManager.ClearSavedGame();
+            SceneManager.LoadScene(menuScene);
         }
 
         if (state == State.IDLE) {
@@ -470,10 +483,37 @@ public class GameController : MonoBehaviour
         animator.SetTrigger("ShowLettersPart2");
     }
 
+    public void SaveGameData() // сохранение при переходе на игры
+    {
+        List<int> historyIndicies = new List<int>();
+        history.ForEach(scene =>
+        {
+            historyIndicies.Add(this.data.scenes.IndexOf(scene));
+        });
+
+        SaveData data = new SaveData
+        {
+            sentence = bottomBar.GetSentenceIndex(),
+            prevScenes = historyIndicies,
+            letter1 = Letters.letter1,
+            letter2 = Letters.letter2,
+            letter3 = Letters.letter3,
+            letter4 = Letters.letter4,
+            letter5 = Letters.letter5,
+            letter6 = Letters.letter6,
+            letter7 = Letters.letter7,
+            keyStatus = Letters.GameKeyStatus,
+            mapStatus = Letters.GameMapStatus,
+            videoStatus = Letters.VideoStatus
+        };
+        SaveManager.SaveGame(data);
+    }
+
     public void GoToMenu()
     {
         //GoToMenu.menuStatus = false;
-        List<int> historyIndicies = new List<int>();
+        SaveGameData();
+        /*List<int> historyIndicies = new List<int>();
         history.ForEach(scene =>
         {
             historyIndicies.Add(this.data.scenes.IndexOf(scene));
@@ -493,7 +533,7 @@ public class GameController : MonoBehaviour
             mapStatus = Letters.GameMapStatus,
             videoStatus = Letters.VideoStatus
         };
-        SaveManager.SaveGame(data);
+        SaveManager.SaveGame(data);*/
         SceneManager.LoadScene(menuScene);
     }
 

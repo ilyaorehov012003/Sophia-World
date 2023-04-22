@@ -153,7 +153,7 @@ public class BottomBarController : MonoBehaviour
     public void SpeedUp()
     {
         speedFactor = 0.1f;
-    }
+}
 
     public void StopTyping()
     {

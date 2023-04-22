@@ -22,7 +22,7 @@ public class JigsawGameData : Singleton<JigsawGameData>
 
     private void Start()
     {
-
+        mFilename = PuzzleImageFileName.pImageName;
     }
 
     void Update()
