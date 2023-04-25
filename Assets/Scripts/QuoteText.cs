@@ -7,12 +7,8 @@ using TMPro;
 public class QuoteText: MonoBehaviour
 {
     //[SerializeField] private TextMeshProUGUI _Quotes;
-
     [SerializeField] private TextMeshProUGUI RandomQuote;
-
     [SerializeField] private string[] Quotes;
-
-    
 
     private void Start()
     {

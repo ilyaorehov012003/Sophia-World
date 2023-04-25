@@ -9,6 +9,8 @@ public class BottomBarController : MonoBehaviour
     public TextMeshProUGUI personNameText;
     public AudioSource voicePlayer;
 
+    public TextMeshProUGUI nameSceneText;//delete25.04.23
+
     private int sentenceIndex = -1;
     private StoryScene currentScene;
     private State state = State.COMPLETED;
@@ -34,8 +36,16 @@ public class BottomBarController : MonoBehaviour
         PLAYING, SPEEDED_UP, COMPLETED
     }
 
+    private void Start()
+    {
+        sprites = new Dictionary<Speaker, SpriteController>();
+        animator = GetComponent<Animator>();
+    }
+
     public void Update()
     {
+        nameSceneText.text = $"{currentScene}";//delete25.04.23
+
         if (currentScene.number == 1)
         {
             Letters.letter1 = true;
@@ -70,12 +80,6 @@ public class BottomBarController : MonoBehaviour
             GameController.PlayScene1();
             Debug.Log("—цена пропущена, так как письмо ' то ты?' не прочитано");
         }*/
-    }
-
-    private void Start()
-    {
-        sprites = new Dictionary<Speaker, SpriteController>();
-        animator = GetComponent<Animator>();
     }
 
     public int GetSceneNumber()
