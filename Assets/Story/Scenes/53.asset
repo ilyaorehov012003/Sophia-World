@@ -14,10 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - text: "\u0421\u043E\u0444\u0438, \u0432\u0438\u0434\u0438\u0448\u044C \u044D\u0442\u043E\u0442
-      \u0445\u0440\u0430\u043C. "
+      \u0445\u0440\u0430\u043C?"
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
-    actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
   background: {fileID: 21300000, guid: ca36a7ab117248146b4c97f6b6e8d1e1, type: 3}

@@ -16,13 +16,11 @@ MonoBehaviour:
   - text: "\u0421\u043E\u0444\u0438\u044F, \u043C\u044B \u0436\u0434\u0435\u043C."
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: dd618287346749e42acc5a7b308f8ead, type: 2}
-    actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "\u0425\u043E\u0440\u043E\u0448\u043E"
+  - text: "\u0425\u043E\u0440\u043E\u0448\u043E..."
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
-    actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
   background: {fileID: 21300000, guid: 61f460696a32e3d4386917138108545d, type: 3}

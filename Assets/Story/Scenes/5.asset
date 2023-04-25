@@ -15,10 +15,9 @@ MonoBehaviour:
   sentences:
   - text: "\u0421\u043E\u0444\u0438\u044F, \u0442\u0443\u0442 \u043F\u0438\u0441\u044C\u043C\u043E
       \u0442\u0435\u0431\u0435, \u044F \u043E\u0441\u0442\u0430\u0432\u0438\u043B\u0430
-      \u0435\u0433\u043E \u043D\u0430 \u043A\u0443\u0445\u043D\u0435"
+      \u0435\u0433\u043E \u043D\u0430 \u043A\u0443\u0445\u043D\u0435."
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 0f7829bf947ba734e8b73f9e9a884532, type: 2}
-    actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
   background: {fileID: 21300000, guid: 2ac93ca351b46b64fb09e026907fdc25, type: 3}

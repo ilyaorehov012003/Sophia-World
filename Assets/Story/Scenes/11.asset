@@ -21,13 +21,11 @@ MonoBehaviour:
       \u043D\u0430\u043F\u0438\u0441\u0430\u043D\u043E?"
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 0f7829bf947ba734e8b73f9e9a884532, type: 2}
-    actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "\u0423-\u0436\u0430\u0441-\u043D-\u0430\u044F"
+  - text: "\u0423-\u0436\u0430\u0441-\u043D-\u0430\u044F."
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
-    actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
   - text: "\u0417\u0434\u0435\u0441\u044C \u0443\u0436\u0430\u0441\u043D\u0430\u044F
@@ -38,7 +36,6 @@ MonoBehaviour:
       \u0418\u0432\u0430\u0440."
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 0f7829bf947ba734e8b73f9e9a884532, type: 2}
-    actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
   background: {fileID: 21300000, guid: 44407f0b3b67be44fb64313011d475be, type: 3}

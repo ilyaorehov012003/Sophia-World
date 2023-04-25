@@ -16,16 +16,14 @@ MonoBehaviour:
   - text: "\u0421\u043E\u0444\u0438\u044F, \u0431\u0443\u0434\u044C \u0434\u043E\u0431\u0440\u0435\u0435."
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: d6425c47808055f48a7ce30348264efc, type: 2}
-    actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
   - text: "\u041A\u0441\u0442\u0430\u0442\u0438, \u044F \u0432\u0438\u0434\u0435\u043B,
       \u043A\u0430\u043A \u043F\u043E\u0447\u0442\u0430\u043B\u044C\u043E\u043D \u043F\u043E\u043B\u043E\u0436\u0438\u043B
       \u0447\u0442\u043E-\u0442\u043E \u0432 \u0442\u0432\u043E\u0439 \u043F\u043E\u0447\u0442\u043E\u0432\u044B\u0439
-      \u044F\u0449\u0438\u043A"
+      \u044F\u0449\u0438\u043A."
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: d6425c47808055f48a7ce30348264efc, type: 2}
-    actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
   background: {fileID: 21300000, guid: cd90b5bacea362749a0c2b6b575be1f5, type: 3}
