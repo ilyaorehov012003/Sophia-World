@@ -16,12 +16,12 @@ public class StoryScene : GameScene
         public string text;
         public AudioClip audio;
         public Speaker speaker;
-        public List<Action> actions;
+        //public List<Action> actions;
 
         public AudioClip music;
         public AudioClip sound;
 
-        [System.Serializable]
+        /*[System.Serializable]
         public struct Action
         {
             public Speaker speaker;
@@ -35,7 +35,7 @@ public class StoryScene : GameScene
             {
                 NONE, APPEAR, MOVE, DISAPPEAR
             }
-        }
+        }*/
     }
 }
 

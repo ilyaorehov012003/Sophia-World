@@ -186,7 +186,7 @@ public class BottomBarController : MonoBehaviour
         {
             voicePlayer.Stop();
         }
-        ActSpeakers(isAnimated);
+        //ActSpeakers(isAnimated);
     }
 
     private IEnumerator TypeText(string text)
@@ -207,16 +207,16 @@ public class BottomBarController : MonoBehaviour
         }
     }
 
-    private void ActSpeakers(bool isAnimated = true)
+    /*private void ActSpeakers(bool isAnimated = true)
     {
         List<StoryScene.Sentence.Action> actions = currentScene.sentences[sentenceIndex].actions;
         for(int i = 0; i < actions.Count; i++)
         {
             ActSpeaker(actions[i], isAnimated);
         }
-    }
+    }*/
 
-    private void ActSpeaker(StoryScene.Sentence.Action action, bool isAnimated = true)
+    /*private void ActSpeaker(StoryScene.Sentence.Action action, bool isAnimated = true)
     {
         SpriteController controller;
         if (!sprites.ContainsKey(action.speaker))
@@ -243,5 +243,5 @@ public class BottomBarController : MonoBehaviour
                 break;
         }
         controller.SwitchSprite(action.speaker.sprites[action.spriteIndex], isAnimated);
-    }
+    }*/
 }
