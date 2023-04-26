@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
+  m_Name: 102
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "*\u0421\u043E\u0444\u0438\u044F \u0434\u043E\u0441\u0442\u0430\u0451\u0442
+      \u0443\u0434\u043E\u0441\u0442\u043E\u0432\u0435\u0440\u0435\u043D\u0438\u0435
+      \u0425\u0438\u043B\u044C\u0434\u044B*"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: c6c568251b5bc13448f5a6698f239af0, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u041C\u043E\u0436\u0435\u0442 \u0442\u044B \u0437\u043D\u0430\u0435\u0448\u044C,
+      \u043A\u0442\u043E \u043E\u043D\u0430? \u041C\u044B \u043E\u0434\u043D\u043E\u0433\u043E
+      \u0432\u043E\u0437\u0440\u0430\u0441\u0442\u0430 \u0438 \u043F\u043E\u0445\u043E\u0436\u0438
+      \u043A\u0430\u043A \u0431\u043B\u0438\u0437\u043D\u0435\u0446\u044B."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  background: {fileID: 21300000, guid: 5cf62a503b9b3af49aa56f34badf7202, type: 3}
+  nextScene: {fileID: 11400000, guid: 8b85a7b5b7b002d45be759fc78f7f247, type: 2}
+  number: 0
