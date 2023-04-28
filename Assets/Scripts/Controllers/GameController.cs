@@ -288,7 +288,7 @@ public class GameController : MonoBehaviour
 
         if (state == State.IDLE) {
             //if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
-            if(NextSentence.nextSentenceStatus)
+            if (NextSentence.nextSentenceStatus && NextSentence.nextSceneStatus == false)
             {
                 NextSentence.nextSentenceStatus = false;
                 if (bottomBar.IsCompleted())
@@ -483,7 +483,7 @@ public class GameController : MonoBehaviour
         animator.SetTrigger("ShowLettersPart2");
     }
 
-    public void SaveGameData() // сохранение при переходе на игры
+    public void SaveGameData() //функция сохранения игровых данных
     {
         List<int> historyIndicies = new List<int>();
         history.ForEach(scene =>

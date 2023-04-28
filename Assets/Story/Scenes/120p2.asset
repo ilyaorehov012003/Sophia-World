@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
+  m_Name: 120p2
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\u041F\u0440\u0438\u0432\u0435\u0442, \u041F\u044C\u0435\u0440."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u041A\u0430\u043A \u0436\u0438\u0437\u043D\u044C?"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 31245d6fde8649c4091fd4ce8f461082, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u041D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u043E."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u042D\u0442\u043E \u0421\u043E\u0444\u0438."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  background: {fileID: 21300000, guid: 80ba39c2bd3b2dd409616752795594b5, type: 3}
+  nextScene: {fileID: 11400000, guid: b5839aa92d38ae448bcd7e06eb55bdb8, type: 2}
+  number: 0

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 91
   m_EditorClassIdentifier: 
   sentences:
-  - text: "\u0425\u0438\u0436\u0438\u043D\u0443 \u041C\u0430\u0439\u043E\u0440\u0430,
-      \u043D\u043E \u0442\u0430\u043C \u0443\u0436\u0435 \u0434\u0430\u0432\u043D\u043E
+  - text: "\u0425\u0438\u0436\u0438\u043D\u0443 \u041C\u0430\u0439\u043E\u0440\u0430?
+      \u041D\u043E \u0442\u0430\u043C \u0443\u0436\u0435 \u0434\u0430\u0432\u043D\u043E
       \u043D\u0438\u043A\u0442\u043E \u043D\u0435 \u0436\u0438\u0432\u0451\u0442."
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 0f7829bf947ba734e8b73f9e9a884532, type: 2}
@@ -38,7 +38,7 @@ MonoBehaviour:
     music: {fileID: 0}
     sound: {fileID: 0}
   - text: "\u042F \u043F\u0440\u0438\u043A\u043E\u0441\u043D\u0443\u043B\u0430\u0441\u044C
-      \u0441 \u0437\u0435\u0440\u043A\u0430\u043B\u0443 \u0440\u0443\u043A\u043E\u0439
+      \u043A \u0437\u0435\u0440\u043A\u0430\u043B\u0443 \u0440\u0443\u043A\u043E\u0439,
       \u0438 \u0440\u0443\u043A\u0430 \u043F\u0440\u043E\u0448\u043B\u0430 \u0447\u0435\u0440\u0435\u0437
       \u043D\u0435\u0433\u043E."
     audio: {fileID: 0}
@@ -70,5 +70,5 @@ MonoBehaviour:
     music: {fileID: 0}
     sound: {fileID: 0}
   background: {fileID: 21300000, guid: 77ca738ed57a8174e899d75398494f4c, type: 3}
-  nextScene: {fileID: 11400000, guid: 81a012339f087f241ab2693b9a4d2d58, type: 2}
+  nextScene: {fileID: 11400000, guid: f72220f644e9e3949a03e723fdb5464a, type: 2}
   number: 0

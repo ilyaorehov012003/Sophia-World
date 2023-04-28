@@ -16,9 +16,9 @@ MonoBehaviour:
   - text: "\u0413\u0434\u0435-\u0442\u043E \u0432\u043E \u0432\u0440\u0435\u043C\u0435\u043D\u0430
       \u0432\u0438\u043A\u0438\u043D\u0433\u043E\u0432."
     audio: {fileID: 0}
-    speaker: {fileID: 0}
+    speaker: {fileID: 11400000, guid: a21edb5026ed08e4d9bc06e77be2defb, type: 2}
     music: {fileID: 0}
     sound: {fileID: 0}
   background: {fileID: 21300000, guid: e42a7a31f8199dc4d87200722bf655e2, type: 3}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 35ae0e2c3b081ff4d8ca507ae4396edf, type: 2}
   number: 0
