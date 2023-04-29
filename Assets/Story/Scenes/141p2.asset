@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 141p2
   m_EditorClassIdentifier: 
   sentences: []
-  background: {fileID: 0}
-  nextScene: {fileID: 0}
+  background: {fileID: 21300000, guid: 8915f07df5c4bc74a9929f0221cd1c21, type: 3}
+  nextScene: {fileID: 11400000, guid: 11f221e76946b8445b44138e15b67a2b, type: 2}
   number: 0
