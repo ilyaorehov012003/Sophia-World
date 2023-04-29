@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
   m_Name: 127p6
   m_EditorClassIdentifier: 
-  sentences: []
-  background: {fileID: 0}
-  nextScene: {fileID: 0}
+  sentences:
+  - text: "\u0412\u0438\u043B\u044C\u0433\u0435\u0439\u043C, \u043E\u0442\u043B\u0435\u0439
+      \u0435\u0449\u0435 \u0431\u0443\u043A\u0432\u044B \u0438 \u043F\u043E\u043B\u043E\u0436\u0438
+      \u0438\u0445 \u0432 \u043D\u0430\u0431\u043E\u0440\u043D\u044B\u0439 \u044F\u0449\u0438\u043A.
+      \u0421\u043F\u0430\u0441\u0438\u0431\u043E. \u0412\u0438\u043B\u044C\u0433\u0435\u0439\u043C?"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 749fbd2e1f101b3439169aac79e087f5, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  background: {fileID: 21300000, guid: c6eeeaa59ad5f1247acccb13913f5406, type: 3}
+  nextScene: {fileID: 11400000, guid: ff6567d64d94bd74f9edbb75b318abee, type: 2}
   number: 0

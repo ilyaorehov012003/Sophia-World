@@ -12,7 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
   m_Name: 133
   m_EditorClassIdentifier: 
-  sentences: []
-  background: {fileID: 0}
-  nextScene: {fileID: 0}
+  sentences:
+  - text: "\u0412\u043E\u043E\u0431\u0449\u0435-\u0442\u043E \u043D\u0430\u0441 \u043D\u0435\u0442,
+      \u043F\u043E\u043D\u0438\u043C\u0430\u0435\u0448\u044C?"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u0412\u0441\u0435 \u043C\u044B \u0442\u043E\u043B\u044C\u043A\u043E \u0433\u0435\u0440\u043E\u0438
+      \u043A\u0430\u043A\u043E\u0433\u043E-\u0442\u043E \u0440\u043E\u043C\u0430\u043D\u0430..."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u0414\u0430, \u0442\u043E\u0447\u043D\u043E."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 0f7829bf947ba734e8b73f9e9a884532, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  background: {fileID: 21300000, guid: 0608f45a5566aa1498e44e56ccccd638, type: 3}
+  nextScene: {fileID: 11400000, guid: ba8524b161ef9aa439a73e2393817a93, type: 2}
   number: 0

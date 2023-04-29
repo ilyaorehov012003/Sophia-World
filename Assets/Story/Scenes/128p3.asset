@@ -12,7 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
   m_Name: 128p3
   m_EditorClassIdentifier: 
-  sentences: []
-  background: {fileID: 0}
-  nextScene: {fileID: 0}
+  sentences:
+  - text: "Don Pedro, \u0432\u0438\u043D\u043E \u0438 \u0447\u0430\u0439."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: a71b6ee9006372c40b594e4d31bc8c5f, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u041A\u0430\u043C\u0430\u043B\u044C\u0441\u0438\u0442\u043E, \u044F \u043F\u043E\u0434\u0443\u043C\u0430\u043B,
+      \u043C\u043E\u0436\u0435\u0442 \u043C\u044B. \u0422\u044B \u0438 \u044F..."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  background: {fileID: 21300000, guid: 9e36dab837b4e0d44b837cecc5f84134, type: 3}
+  nextScene: {fileID: 11400000, guid: 9cbeb2c2fcdc92a4aa04bfeeb0bb4e66, type: 2}
   number: 0

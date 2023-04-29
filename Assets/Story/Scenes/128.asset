@@ -12,7 +12,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
   m_Name: 128
   m_EditorClassIdentifier: 
-  sentences: []
-  background: {fileID: 0}
-  nextScene: {fileID: 0}
+  sentences:
+  - text: Si.
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: a71b6ee9006372c40b594e4d31bc8c5f, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: Si.
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: Vino?
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: a71b6ee9006372c40b594e4d31bc8c5f, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: Vino-vino.
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u0418 \u0435\u0439?"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: a71b6ee9006372c40b594e4d31bc8c5f, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u041A\u043E\u043A\u0430-\u043A\u043E\u043B\u0430."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u0427\u0442\u043E?"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: a71b6ee9006372c40b594e4d31bc8c5f, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u041A\u043E-\u043A\u0430-\u043A\u043E-\u043B\u0430."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u041B\u0443\u0447\u0448\u0435 \u044F \u0432\u043E\u0437\u044C\u043C\u0443
+      \u0447\u0430\u0439..."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  background: {fileID: 21300000, guid: dafbd245a90f7394e950bde06b771156, type: 3}
+  nextScene: {fileID: 11400000, guid: 9f252a7f0d7d9574b977efe8f9d44b97, type: 2}
   number: 0
