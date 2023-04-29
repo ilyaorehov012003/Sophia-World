@@ -84,7 +84,9 @@ public class GameController : MonoBehaviour
             Letters.letter3 = data.letter3;
             Letters.GameKeyStatus = data.keyStatus;
             Letters.GameMapStatus = data.mapStatus;
-            Letters.VideoStatus = data.videoStatus;
+            Letters.VideoStatusInSchool = data.videoStatusInSchool;
+            Letters.VideoStatusScene96 = data.videoStatusScene96;
+            Letters.VideoStatusScene124 = data.videoStatusScene124;
         }
         if (currentScene is StoryScene)
         {
@@ -247,11 +249,11 @@ public class GameController : MonoBehaviour
             SceneManager.LoadScene("MapGame");
         }
 
-        if (bottomBar.GetSceneNumber() == 102 && Letters.VideoStatus == true && bottomBar.IsLastSentence())
+        if (bottomBar.GetSceneNumber() == 102 && Letters.VideoStatusInSchool == true && bottomBar.IsLastSentence())
         {
             Debug.Log("Просмотр видео 'София читает сочинение'");
             //Scene11_1.number = 0;
-            Letters.VideoStatus = false;
+            Letters.VideoStatusInSchool = false;
 
             SaveGameData();
 
@@ -278,6 +280,22 @@ public class GameController : MonoBehaviour
             };
             SaveManager.SaveGame(data);*/
             SceneManager.LoadScene("VideoInSchool");
+        }
+
+        if (bottomBar.GetSceneNumber() == 103 && Letters.VideoStatusScene96 == true)
+        {
+            Debug.Log("Просмотр видео 'София идёт в церковь'");
+            Letters.VideoStatusScene96 = false;
+            SaveGameData();
+            SceneManager.LoadScene("VideoScene96");
+        }
+
+        if (bottomBar.GetSceneNumber() == 104 && Letters.VideoStatusScene124 == true)
+        {
+            Debug.Log("Просмотр видео 'Альберто играет на кларнете'");
+            Letters.VideoStatusScene124 = false;
+            SaveGameData();
+            SceneManager.LoadScene("VideoScene124");
         }
 
         if (bottomBar.GetSceneNumber() == 1000 && bottomBar.IsLastSentence())
@@ -504,7 +522,9 @@ public class GameController : MonoBehaviour
             letter7 = Letters.letter7,
             keyStatus = Letters.GameKeyStatus,
             mapStatus = Letters.GameMapStatus,
-            videoStatus = Letters.VideoStatus
+            videoStatusInSchool = Letters.VideoStatusInSchool,
+            videoStatusScene96 = Letters.VideoStatusScene96,
+            videoStatusScene124 = Letters.VideoStatusScene124
         };
         SaveManager.SaveGame(data);
     }

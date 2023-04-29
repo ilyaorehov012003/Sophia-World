@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa21d4123d556443abbbad79a10b72f, type: 3}
   m_Name: q149p4
   m_EditorClassIdentifier: 
-  labels: []
+  labels:
+  - text: "\u041F\u0440\u043E\u043C\u043E\u043B\u0447\u0430\u0442\u044C"
+    nextScene: {fileID: 11400000, guid: 14ee8aaedeef1644597c976b7cdc6a69, type: 2}
+  - text: "\u0421\u043A\u0430\u0437\u0430\u0442\u044C \u043F\u0440\u043E \u041E\u043B\u0438\u043C\u043F\u0438\u044E
+      \u0434\u0435 \u0413\u0443\u0436"
+    nextScene: {fileID: 11400000, guid: e3c1b2b7864e61f408a5f9f27818f8f6, type: 2}

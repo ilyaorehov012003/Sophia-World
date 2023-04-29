@@ -13,5 +13,7 @@ public struct SaveData
     public bool letter7;
     public bool keyStatus;
     public bool mapStatus;
-    public bool videoStatus;
+    public bool videoStatusInSchool;
+    public bool videoStatusScene96;
+    public bool videoStatusScene124;
 }

@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
   m_Name: 142p6
   m_EditorClassIdentifier: 
-  sentences: []
+  sentences:
+  - text: "\u041E\u0439."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 57bd5cc19e7638042bd82925495d0a67, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
   background: {fileID: 21300000, guid: 28882e4b9464f6d4597b58bd6aba0adf, type: 3}
   nextScene: {fileID: 11400000, guid: b67113a98be298840930da9b53a457d4, type: 2}
   number: 0

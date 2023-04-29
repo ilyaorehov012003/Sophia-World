@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
+  m_Name: 137p3-1
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\u041F\u0440\u0438\u0432\u0435\u0442, \u0421\u043E\u0444\u0438. \u042F
+      \u041C\u0430\u0439\u043E\u0440 \u0410\u043B\u044C\u0431\u0435\u0440\u0442 \u041A\u043B\u0430\u0440\u043A."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 4530de6a9764c1241861effa5fc4b4b7, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u042D\u0442\u043E \u043C\u0430\u0439\u043E\u0440."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u041C\u0430\u0439\u043E\u0440?!"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u041E\u043D \u0440\u0430\u0437\u0433\u043E\u0432\u0430\u0440\u0438\u0432\u0430\u0435\u0442
+      \u0441 \u043D\u0430\u043C\u0438?"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u041A \u0432\u0430\u0448\u0438\u043C \u0443\u0441\u043B\u0443\u0433\u0430\u043C."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 4530de6a9764c1241861effa5fc4b4b7, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u0410\u0432\u0442\u043E\u0440..."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 81ba31e81bba79740abfc1393a46b19f, type: 2}
+  number: 0

@@ -7,7 +7,7 @@ public class VideoScriptChurch : MonoBehaviour
 {
     void Start()
     {
-        StartCoroutine(Co_WaitForSeconds(130f)); // 130f - длина видео в секундах
+        StartCoroutine(Co_WaitForSeconds(215f)); // 215f - длина видео в секундах
     }
 
     private IEnumerator Co_WaitForSeconds(float value)

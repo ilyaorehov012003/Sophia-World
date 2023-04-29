@@ -25,7 +25,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "\u0421\u044B\u0433\u0440\u0430\u0439\u0442\u0435."
+  - text: "\u0421\u044B\u0433\u0440\u0430\u0439\u0442\u0435!"
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 7cdec46b7cb22b14f8a4e6c4e86dd7e9, type: 2}
     music: {fileID: 0}
