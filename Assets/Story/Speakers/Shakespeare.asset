@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e6a862dae1ccf488ae4d4570f9f88c, type: 3}
   m_Name: Shakespeare
   m_EditorClassIdentifier: 
-  speakerName: "\u0428\u0435\u043A\u0441\u043F\u0438\u0440"
+  speakerName: "\u0423\u0438\u043B\u044C\u044F\u043C \u0428\u0435\u043A\u0441\u043F\u0438\u0440"
   textColor: {r: 0.1981058, g: 0.5377358, b: 0.10856175, a: 0}
   sprites: []
   prefab: {fileID: 0}

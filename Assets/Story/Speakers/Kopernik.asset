@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e6a862dae1ccf488ae4d4570f9f88c, type: 3}
   m_Name: Kopernik
   m_EditorClassIdentifier: 
-  speakerName: "\u041A\u043E\u043F\u0435\u0440\u043D\u0438\u043A"
+  speakerName: "\u041D\u0438\u043A\u043E\u043B\u0430\u0439 \u041A\u043E\u043F\u0435\u0440\u043D\u0438\u043A"
   textColor: {r: 0.071021676, g: 0.3979639, b: 0.6603774, a: 0}
   sprites: []
   prefab: {fileID: 0}

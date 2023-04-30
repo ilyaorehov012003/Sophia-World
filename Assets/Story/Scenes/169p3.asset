@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
+  m_Name: 169p3
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\u0410 \u043D\u0443-\u043A\u0430 \u0431\u0443\u0440\u0436\u0443\u0439\u0441\u043A\u0430,
+      \u043F\u043E\u043A\u0430\u0436\u0438 \u0431\u0443\u043C\u0430\u0433\u0438."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 68d33fc373d0fbe418fc823f212c0728, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u0421\u043C\u043E\u0442\u0440\u0438!"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  background: {fileID: 21300000, guid: 82982a4c53889074ca22444700e56df1, type: 3}
+  nextScene: {fileID: 11400000, guid: 986591b66d577e94b8e2f78544510c35, type: 2}
+  number: 0

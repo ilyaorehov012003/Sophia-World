@@ -15,10 +15,23 @@ public class GameController : MonoBehaviour
     public GameScene Scene17;
     public GameScene Scene20;
     public GameScene Scene20_1;
-    public GameScene Scene20_2; 
+    public GameScene Scene20_2;
     public GameScene Scene20_3;
     public GameScene Scene37_2;
     public GameScene Scene39;
+    public GameScene Scene92;
+    public GameScene Scene132;
+    public GameScene Scene138;
+    public GameScene Scene140;
+    public GameScene Scene143;
+    public GameScene Scene146;
+    public GameScene Scene153;
+    public GameScene Scene156;
+    public GameScene Scene156p3;
+    public GameScene Scene158;
+    public GameScene Scene159p3;
+    public GameScene Scene165;
+    public GameScene Scene176;
     public BottomBarController bottomBar;
     public SpriteSwitcher backgroundController;
     public ChooseController chooseController;
@@ -59,6 +72,20 @@ public class GameController : MonoBehaviour
     private bool isWork6 = true;
     private bool isWork7 = true;
 
+    public GameObject Abstract1;
+    public GameObject Abstract2;
+    public GameObject Abstract3;
+    public GameObject Abstract4;
+    public GameObject Abstract5;
+    public GameObject Abstract6;
+    public GameObject Abstract7;
+    public GameObject Abstract8;
+    public GameObject Abstract9;
+    public GameObject Abstract10;
+    public GameObject Abstract11;
+    public GameObject Abstract12;
+    public GameObject Abstract13;
+
     //private bool gameKey = true;
 
     private enum State
@@ -82,12 +109,25 @@ public class GameController : MonoBehaviour
             Letters.letter1 = data.letter1;
             Letters.letter2 = data.letter2;
             Letters.letter3 = data.letter3;
+            Letters.letter4 = data.letter4;
+            Letters.letter5 = data.letter5;
+            Letters.letter6 = data.letter6;
+            Letters.letter7 = data.letter7;
+            Letters.letter8 = data.letter8;
+            Letters.letter9 = data.letter9;
+            Letters.letter10 = data.letter10;
+            Letters.letter11 = data.letter11;
             Letters.GameKeyStatus = data.keyStatus;
             Letters.GameMapStatus = data.mapStatus;
             Letters.VideoStatusInSchool = data.videoStatusInSchool;
             Letters.VideoStatusScene96 = data.videoStatusScene96;
             Letters.VideoStatusScene124 = data.videoStatusScene124;
             Letters.VideoStatusScene175 = data.videoStatusScene175;
+            Letters.Puzzle1 = data.puzzle1;
+            Letters.Puzzle2 = data.puzzle2;
+            Letters.Puzzle3 = data.puzzle3;
+            Letters.Puzzle4 = data.puzzle4;
+            Letters.Puzzle5 = data.puzzle5;
         }
         if (currentScene is StoryScene)
         {
@@ -141,6 +181,71 @@ public class GameController : MonoBehaviour
         {
             ImageLetter6.SetActive(true);
             Debug.Log("Письмо 6 открыто");
+        }
+
+        if (bottomBar.GetSceneNumber() == 1001)
+        {
+            Abstract1.SetActive(true);
+        }
+
+        if (bottomBar.GetSceneNumber() == 1002)
+        {
+            Abstract2.SetActive(true);
+        }
+
+        if (bottomBar.GetSceneNumber() == 1003)
+        {
+            Abstract3.SetActive(true);
+        }
+
+        if (bottomBar.GetSceneNumber() == 1004)
+        {
+            Abstract4.SetActive(true);
+        }
+
+        if (bottomBar.GetSceneNumber() == 1005)
+        {
+            Abstract5.SetActive(true);
+        }
+
+        if (bottomBar.GetSceneNumber() == 1006)
+        {
+            Abstract6.SetActive(true);
+        }
+
+        if (bottomBar.GetSceneNumber() == 1007)
+        {
+            Abstract7.SetActive(true);
+        }
+
+        if (bottomBar.GetSceneNumber() == 1008)
+        {
+            Abstract8.SetActive(true);
+        }
+
+        if (bottomBar.GetSceneNumber() == 1009)
+        {
+            Abstract9.SetActive(true);
+        }
+
+        if (bottomBar.GetSceneNumber() == 1010)
+        {
+            Abstract10.SetActive(true);
+        }
+
+        if (bottomBar.GetSceneNumber() == 1011)
+        {
+            Abstract11.SetActive(true);
+        }
+
+        if (bottomBar.GetSceneNumber() == 1012)
+        {
+            Abstract12.SetActive(true);
+        }
+
+        if (bottomBar.GetSceneNumber() == 1013)
+        {
+            Abstract13.SetActive(true);
         }
 
         if (bottomBar.GetSceneNumber() == 1 && isWork1 == true)
@@ -307,6 +412,63 @@ public class GameController : MonoBehaviour
             SceneManager.LoadScene("VideoScene175");
         }
 
+
+
+
+
+
+
+        if (bottomBar.GetSceneNumber() == 111 && Letters.Puzzle1 == true && bottomBar.IsLastSentence() && bottomBar.IsCompleted())
+        {
+            Debug.Log("Паззл 1");
+            Letters.Puzzle1 = false;
+            Letters.NamePuzzle = "images1/image01_8_5";
+            SaveGameData();
+            SceneManager.LoadScene("JigsawGame");
+        }
+
+        if (bottomBar.GetSceneNumber() == 112 && Letters.Puzzle2 == true)
+        {
+            Debug.Log("Паззл 2");
+            Letters.Puzzle2 = false;
+            Letters.NamePuzzle = "images2/image01_8_5";
+            SaveGameData();
+            SceneManager.LoadScene("JigsawGame");
+        }
+
+        if (bottomBar.GetSceneNumber() == 113 && Letters.Puzzle3 == true)
+        {
+            Debug.Log("Паззл 3");
+            Letters.Puzzle3 = false;
+            Letters.NamePuzzle = "images3/image01_8_5";
+            SaveGameData();
+            SceneManager.LoadScene("JigsawGame");
+        }
+
+        if (bottomBar.GetSceneNumber() == 114 && Letters.Puzzle4 == true)
+        {
+            Debug.Log("Паззл 4");
+            Letters.Puzzle4 = false;
+            Letters.NamePuzzle = "images4/image01_8_5";
+            SaveGameData();
+            SceneManager.LoadScene("JigsawGame");
+        }
+
+        if (bottomBar.GetSceneNumber() == 115 && Letters.Puzzle5 == true)
+        {
+            Debug.Log("Паззл 5");
+            Letters.Puzzle5 = false;
+            Letters.NamePuzzle = "images5/image01_8_5";
+            SaveGameData();
+            SceneManager.LoadScene("JigsawGame");
+        }
+
+
+
+
+
+
+
         if (bottomBar.GetSceneNumber() == 1000 && bottomBar.IsLastSentence())
         {
             SaveManager.ClearSavedGame();
@@ -345,6 +507,71 @@ public class GameController : MonoBehaviour
                     else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 3839 && Letters.letter1 == true)
                     {
                         PlayScene(Scene39);
+                    }
+
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 9192 && Letters.letter10 == false && Letters.letter9 == false && GetLetterAmount() < 4)
+                    {
+                        PlayScene(Scene92);
+                    }
+
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 130132 && Letters.letter9 == false && GetLetterAmount() < 4)
+                    {
+                        PlayScene(Scene132);
+                    }
+
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 132138 && Letters.letter9 == false && GetLetterAmount() < 4)
+                    {
+                        PlayScene(Scene138);
+                    }
+
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 13812140 && Letters.letter9 == false && GetLetterAmount() < 4)
+                    {
+                        PlayScene(Scene140);
+                    }
+
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 140143 && Letters.letter9 == false && GetLetterAmount() < 4)
+                    {
+                        PlayScene(Scene143);
+                    }
+
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 143146 && Letters.letter9 == false && GetLetterAmount() < 4)
+                    {
+                        PlayScene(Scene146);
+                    }
+
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 152153 && Letters.letter9 == false && GetLetterAmount() < 4)
+                    {
+                        PlayScene(Scene153);
+                    }
+
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 1531156 && Letters.letter9 == false && GetLetterAmount() < 4)
+                    {
+                        PlayScene(Scene156);
+                    }
+
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 1561562 && Letters.letter9 == false && GetLetterAmount() < 4)
+                    {
+                        PlayScene(Scene156p3);
+                    }
+
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 1563158 && Letters.letter9 == false && GetLetterAmount() < 4)
+                    {
+                        PlayScene(Scene158);
+                    }
+
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 1591592 && Letters.letter9 == false && GetLetterAmount() < 4)
+                    {
+                        PlayScene(Scene159p3);
+                    }
+
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 1623165 && Letters.letter9 == false && GetLetterAmount() < 4)
+                    {
+                        PlayScene(Scene165);
+                    }
+
+                    else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 1657176 && Letters.letter9 == false && GetLetterAmount() < 4)
+                    {
+                        PlayScene(Scene176);
                     }
 
                     else if (bottomBar.IsLastSentence() && bottomBar.GetSceneNumber() == 1920)
@@ -529,12 +756,17 @@ public class GameController : MonoBehaviour
             letter5 = Letters.letter5,
             letter6 = Letters.letter6,
             letter7 = Letters.letter7,
+            letter8 = Letters.letter8,
+            letter9 = Letters.letter9,
+            letter10 = Letters.letter10,
+            letter11 = Letters.letter11,
             keyStatus = Letters.GameKeyStatus,
             mapStatus = Letters.GameMapStatus,
             videoStatusInSchool = Letters.VideoStatusInSchool,
             videoStatusScene96 = Letters.VideoStatusScene96,
             videoStatusScene124 = Letters.VideoStatusScene124,
-            videoStatusScene175 = Letters.VideoStatusScene175
+            videoStatusScene175 = Letters.VideoStatusScene175,
+            namePuzzle = Letters.NamePuzzle
         };
         SaveManager.SaveGame(data);
     }
@@ -607,5 +839,23 @@ public class GameController : MonoBehaviour
     private void PlayAudio(StoryScene.Sentence sentence)
     {
         audioController.PlayAudio(sentence.music, sentence.sound);
+    }
+
+    public int GetLetterAmount()
+    {
+        int letterAmount = 0;
+        if (Letters.letter1) letterAmount++;
+        if (Letters.letter2) letterAmount++;
+        if (Letters.letter3) letterAmount++;
+        if (Letters.letter4) letterAmount++;
+        if (Letters.letter5) letterAmount++;
+        if (Letters.letter6) letterAmount++;
+        if (Letters.letter7) letterAmount++;
+        if (Letters.letter8) letterAmount++;
+        if (Letters.letter9) letterAmount++;
+        if (Letters.letter10) letterAmount++;
+        if (Letters.letter11) letterAmount++;
+        Debug.Log(letterAmount);
+        return letterAmount;
     }
 }
