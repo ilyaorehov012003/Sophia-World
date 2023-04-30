@@ -11,10 +11,20 @@ public struct SaveData
     public bool letter5;
     public bool letter6;
     public bool letter7;
+    public bool letter8;
+    public bool letter9;
+    public bool letter10;
+    public bool letter11;
     public bool keyStatus;
     public bool mapStatus;
     public bool videoStatusInSchool;
     public bool videoStatusScene96;
     public bool videoStatusScene124;
     public bool videoStatusScene175;
+    public bool puzzle1;
+    public bool puzzle2;
+    public bool puzzle3;
+    public bool puzzle4;
+    public bool puzzle5;
+    public string namePuzzle;
 }

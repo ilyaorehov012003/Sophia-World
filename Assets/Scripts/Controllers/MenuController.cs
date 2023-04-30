@@ -42,12 +42,21 @@ public class MenuController : MonoBehaviour
         Letters.letter5 = false;
         Letters.letter6 = false;
         Letters.letter7 = false;
+        Letters.letter8 = false;
+        Letters.letter9 = false;
+        Letters.letter10 = false;
+        Letters.letter11 = false;
         Letters.GameKeyStatus = true;
         Letters.GameMapStatus = true;
         Letters.VideoStatusInSchool = true;
         Letters.VideoStatusScene96 = true;
         Letters.VideoStatusScene124 = true;
         Letters.VideoStatusScene175 = true;
+        Letters.Puzzle1 = true;
+        Letters.Puzzle2 = true;
+        Letters.Puzzle3 = true;
+        Letters.Puzzle4 = true;
+        Letters.Puzzle5 = true;
         SaveManager.ClearSavedGame();
         Load();
     }
