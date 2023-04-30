@@ -87,6 +87,7 @@ public class GameController : MonoBehaviour
             Letters.VideoStatusInSchool = data.videoStatusInSchool;
             Letters.VideoStatusScene96 = data.videoStatusScene96;
             Letters.VideoStatusScene124 = data.videoStatusScene124;
+            Letters.VideoStatusScene175 = data.videoStatusScene175;
         }
         if (currentScene is StoryScene)
         {
@@ -296,6 +297,14 @@ public class GameController : MonoBehaviour
             Letters.VideoStatusScene124 = false;
             SaveGameData();
             SceneManager.LoadScene("VideoScene124");
+        }
+
+        if (bottomBar.GetSceneNumber() == 105 && Letters.VideoStatusScene175 == true)
+        {
+            Debug.Log("Просмотр видео 'Альберто и София на дне рождения у Хильды'");
+            Letters.VideoStatusScene175 = false;
+            SaveGameData();
+            SceneManager.LoadScene("VideoScene175");
         }
 
         if (bottomBar.GetSceneNumber() == 1000 && bottomBar.IsLastSentence())
@@ -524,7 +533,8 @@ public class GameController : MonoBehaviour
             mapStatus = Letters.GameMapStatus,
             videoStatusInSchool = Letters.VideoStatusInSchool,
             videoStatusScene96 = Letters.VideoStatusScene96,
-            videoStatusScene124 = Letters.VideoStatusScene124
+            videoStatusScene124 = Letters.VideoStatusScene124,
+            videoStatusScene175 = Letters.VideoStatusScene175
         };
         SaveManager.SaveGame(data);
     }

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
+  m_Name: 152
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\u0411\u043E\u0433 \u0443\u043C\u0435\u0440. \u0412\u043E \u0432\u0441\u044F\u043A\u043E\u043C
+      \u0441\u043B\u0443\u0447\u0430\u0435, \u0442\u0430\u043A \u0441\u0447\u0438\u0442\u0430\u0435\u0442
+      \u0444\u0438\u043B\u043E\u0441\u043E\u0444 \u0424\u0440\u0438\u0434\u0440\u0438\u0445
+      \u041D\u0438\u0446\u0448\u0435."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u041C\u044B \u0436\u0438\u0432\u0435\u043C \u0432 \u0441\u043B\u043E\u0436\u043D\u043E\u043C
+      \u043E\u0431\u0449\u0435\u0441\u0442\u0432\u0435 \u0438 \u043D\u0435 \u043C\u043E\u0436\u0435\u043C
+      \u0441\u043E\u0440\u0438\u0435\u043D\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  - text: "\u0421\u043B\u0430\u0431\u044B\u0435 \u0431\u043E\u043B\u044C\u0448\u0435
+      \u043D\u0435 \u0434\u043E\u043B\u0436\u043D\u044B \u0431\u044B\u043B\u0438
+      \u0441\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0442\u044C \u0441\u0435\u0431\u044F."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  background: {fileID: 21300000, guid: 277661305bfa60840ab461f871ed4435, type: 3}
+  nextScene: {fileID: 11400000, guid: 471d15395ed0d8449b1e97bd9634778f, type: 2}
+  number: 0

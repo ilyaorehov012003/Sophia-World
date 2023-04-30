@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
+  m_Name: 160p7
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\u0412\u0430\u043D\u044F, \u0412\u0430\u043D\u044F, \u043A\u0442\u043E
+      \u044D\u0442\u043E? \u0421\u043C\u043E\u0442\u0440\u0438, \u0442\u0430\u043C
+      \u043A\u0442\u043E-\u0442\u043E \u0435\u0441\u0442\u044C."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8fdcc82411572c2439f176dab4fe0513, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
+  background: {fileID: 21300000, guid: f8030de9b2c4d7b4ea8450cb00766948, type: 3}
+  nextScene: {fileID: 11400000, guid: 5c5b4529203572944bf7cd2736bb1ac4, type: 2}
+  number: 0

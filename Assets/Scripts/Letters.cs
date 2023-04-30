@@ -17,4 +17,5 @@ public class Letters : MonoBehaviour
     public static bool VideoStatusInSchool;
     public static bool VideoStatusScene96;
     public static bool VideoStatusScene124;
+    public static bool VideoStatusScene175;
 }

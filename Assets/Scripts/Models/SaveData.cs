@@ -16,4 +16,5 @@ public struct SaveData
     public bool videoStatusInSchool;
     public bool videoStatusScene96;
     public bool videoStatusScene124;
+    public bool videoStatusScene175;
 }

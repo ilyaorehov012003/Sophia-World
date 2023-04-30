@@ -47,6 +47,7 @@ public class MenuController : MonoBehaviour
         Letters.VideoStatusInSchool = true;
         Letters.VideoStatusScene96 = true;
         Letters.VideoStatusScene124 = true;
+        Letters.VideoStatusScene175 = true;
         SaveManager.ClearSavedGame();
         Load();
     }
