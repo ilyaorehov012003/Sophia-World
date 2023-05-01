@@ -20,4 +20,4 @@ MonoBehaviour:
     sound: {fileID: 0}
   background: {fileID: 21300000, guid: b06e42bd78f396c4c96302c366b01afc, type: 3}
   nextScene: {fileID: 11400000, guid: d472a36cb01629c40ae3558b763a7e2f, type: 2}
-  number: 0
+  number: 1013

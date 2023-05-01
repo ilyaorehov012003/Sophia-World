@@ -46,6 +46,11 @@ public class MenuController : MonoBehaviour
         Letters.letter9 = false;
         Letters.letter10 = false;
         Letters.letter11 = false;
+        Letters.PuzzleCard1 = false;
+        Letters.PuzzleCard2 = false;
+        Letters.PuzzleCard3 = false;
+        Letters.PuzzleCard4 = false;
+        Letters.PuzzleCard5 = false;
         Letters.GameKeyStatus = true;
         Letters.GameMapStatus = true;
         Letters.VideoStatusInSchool = true;

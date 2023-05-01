@@ -70,6 +70,24 @@ public class BottomBarController : MonoBehaviour
             Debug.Log("София получила письмо № 6");
         }
 
+        if (currentScene.number == 8)
+        {
+            Letters.letter8 = true;
+            Debug.Log("София получила письмо № 6");
+        }
+
+        if (currentScene.number == 9)
+        {
+            Letters.letter9 = true;
+            Debug.Log("София получила письмо № 6");
+        }
+
+        if (currentScene.number == 11)
+        {
+            Letters.letter11 = true;
+            Debug.Log("София получила письмо № 6");
+        }
+
         /*if (currentScene.number == 100)
         {
             currentScene.number = 0;

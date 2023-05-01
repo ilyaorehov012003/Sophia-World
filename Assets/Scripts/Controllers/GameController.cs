@@ -55,6 +55,15 @@ public class GameController : MonoBehaviour
     public GameObject ImageLetter2;
     public GameObject ImageLetter3;
     public GameObject ImageLetter6;
+    public GameObject ImageLetter8;
+    public GameObject ImageLetter9;
+    public GameObject ImageLetter11;
+
+    public GameObject ImageCard1;
+    public GameObject ImageCard2;
+    public GameObject ImageCard3;
+    public GameObject ImageCard4;
+    public GameObject ImageCard5;
 
     public GameObject ImageLetterText1;
     public GameObject ImageLetterText2;
@@ -63,6 +72,15 @@ public class GameController : MonoBehaviour
     public GameObject ImageLetterText5;
     public GameObject ImageLetterText6;
     public GameObject ImageLetterText7;
+    public GameObject ImageLetterText8;
+    public GameObject ImageLetterText9;
+    public GameObject ImageLetterText11;
+
+    public GameObject ImageCardText1;
+    public GameObject ImageCardText2;
+    public GameObject ImageCardText3;
+    public GameObject ImageCardText4;
+    public GameObject ImageCardText5;
 
     private bool isWork1 = true;
     private bool isWork2 = true;
@@ -71,6 +89,9 @@ public class GameController : MonoBehaviour
     private bool isWork5 = true;
     private bool isWork6 = true;
     private bool isWork7 = true;
+    private bool isWork8 = true;
+    private bool isWork9 = true;
+    private bool isWork11 = true;
 
     public GameObject Abstract1;
     public GameObject Abstract2;
@@ -117,6 +138,11 @@ public class GameController : MonoBehaviour
             Letters.letter9 = data.letter9;
             Letters.letter10 = data.letter10;
             Letters.letter11 = data.letter11;
+            Letters.PuzzleCard1 = data.puzzleCard1;
+            Letters.PuzzleCard2 = data.puzzleCard2;
+            Letters.PuzzleCard3 = data.puzzleCard3;
+            Letters.PuzzleCard4 = data.puzzleCard4;
+            Letters.PuzzleCard5 = data.puzzleCard5;
             Letters.GameKeyStatus = data.keyStatus;
             Letters.GameMapStatus = data.mapStatus;
             Letters.VideoStatusInSchool = data.videoStatusInSchool;
@@ -183,6 +209,49 @@ public class GameController : MonoBehaviour
             Debug.Log("Письмо 6 открыто");
         }
 
+        if (Letters.letter8 == true)
+        {
+            ImageLetter8.SetActive(true);
+            Debug.Log("Письмо 6 открыто");
+        }
+
+        if (Letters.letter9 == true)
+        {
+            ImageLetter9.SetActive(true);
+            Debug.Log("Письмо 6 открыто");
+        }
+
+        if (Letters.letter11 == true)
+        {
+            ImageLetter11.SetActive(true);
+            Debug.Log("Письмо 6 открыто");
+        }
+
+        if (Letters.PuzzleCard1 == true)
+        {
+            ImageCard1.SetActive(true);
+        }
+
+        if (Letters.PuzzleCard2 == true)
+        {
+            ImageCard2.SetActive(true);
+        }
+
+        if (Letters.PuzzleCard3 == true)
+        {
+            ImageCard3.SetActive(true);
+        }
+
+        if (Letters.PuzzleCard4 == true)
+        {
+            ImageCard4.SetActive(true);
+        }
+
+        if (Letters.PuzzleCard5 == true)
+        {
+            ImageCard5.SetActive(true);
+        }
+
         if (bottomBar.GetSceneNumber() == 1001)
         {
             Abstract1.SetActive(true);
@@ -233,7 +302,7 @@ public class GameController : MonoBehaviour
             Abstract10.SetActive(true);
         }
 
-        if (bottomBar.GetSceneNumber() == 1011)
+        if (bottomBar.GetSceneNumber() == 152153) // вместо 1011
         {
             Abstract11.SetActive(true);
         }
@@ -246,6 +315,71 @@ public class GameController : MonoBehaviour
         if (bottomBar.GetSceneNumber() == 1013)
         {
             Abstract13.SetActive(true);
+        }
+
+        if (bottomBar.GetSceneNumber() != 1001)
+        {
+            Abstract1.SetActive(false);
+        }
+
+        if (bottomBar.GetSceneNumber() != 1002)
+        {
+            Abstract2.SetActive(false);
+        }
+
+        if (bottomBar.GetSceneNumber() != 1003)
+        {
+            Abstract3.SetActive(false);
+        }
+
+        if (bottomBar.GetSceneNumber() != 1004)
+        {
+            Abstract4.SetActive(false);
+        }
+
+        if (bottomBar.GetSceneNumber() != 1005)
+        {
+            Abstract5.SetActive(false);
+        }
+
+        if (bottomBar.GetSceneNumber() != 1006)
+        {
+            Abstract6.SetActive(false);
+        }
+
+        if (bottomBar.GetSceneNumber() != 1007)
+        {
+            Abstract7.SetActive(false);
+        }
+
+        if (bottomBar.GetSceneNumber() != 1008)
+        {
+            Abstract8.SetActive(false);
+        }
+
+        if (bottomBar.GetSceneNumber() != 1009)
+        {
+            Abstract9.SetActive(false);
+        }
+
+        if (bottomBar.GetSceneNumber() != 1010)
+        {
+            Abstract10.SetActive(false);
+        }
+
+        if (bottomBar.GetSceneNumber() != 152153) // вместо 1011
+        {
+            Abstract11.SetActive(false);
+        }
+
+        if (bottomBar.GetSceneNumber() != 1012)
+        {
+            Abstract12.SetActive(false);
+        }
+
+        if (bottomBar.GetSceneNumber() != 1013)
+        {
+            Abstract13.SetActive(false);
         }
 
         if (bottomBar.GetSceneNumber() == 1 && isWork1 == true)
@@ -288,6 +422,24 @@ public class GameController : MonoBehaviour
         {
             isWork7 = false;
             ShowLetter7();
+        }
+
+        if (bottomBar.GetSceneNumber() == 8 && isWork8 == true)
+        {
+            isWork8 = false;
+            ShowTextLetter8();
+        }
+
+        if (bottomBar.GetSceneNumber() == 9 && isWork9 == true)
+        {
+            isWork9 = false;
+            ShowTextLetter9();
+        }
+
+        if (bottomBar.GetSceneNumber() == 11 && isWork11 == true)
+        {
+            isWork11 = false;
+            ShowTextLetter11();
         }
 
         if (bottomBar.GetSceneNumber() == 100 && Letters.GameKeyStatus == true)
@@ -412,64 +564,57 @@ public class GameController : MonoBehaviour
             SceneManager.LoadScene("VideoScene175");
         }
 
-
-
-
-
-
-
         if (bottomBar.GetSceneNumber() == 111 && Letters.Puzzle1 == true && bottomBar.IsLastSentence() && bottomBar.IsCompleted())
         {
             Debug.Log("Паззл 1");
+            ImageCard1.SetActive(true);
             Letters.Puzzle1 = false;
             Letters.NamePuzzle = "images1/image01_8_5";
             SaveGameData();
             SceneManager.LoadScene("JigsawGame");
         }
 
-        if (bottomBar.GetSceneNumber() == 112 && Letters.Puzzle2 == true)
+        if (bottomBar.GetSceneNumber() == 112 && Letters.Puzzle2 == true && bottomBar.IsLastSentence() && bottomBar.IsCompleted())
         {
             Debug.Log("Паззл 2");
+            ImageCard2.SetActive(true);
             Letters.Puzzle2 = false;
             Letters.NamePuzzle = "images2/image01_8_5";
             SaveGameData();
             SceneManager.LoadScene("JigsawGame");
         }
 
-        if (bottomBar.GetSceneNumber() == 113 && Letters.Puzzle3 == true)
+        if (bottomBar.GetSceneNumber() == 113 && Letters.Puzzle3 == true && bottomBar.IsLastSentence() && bottomBar.IsCompleted())
         {
             Debug.Log("Паззл 3");
+            ImageCard3.SetActive(true);
             Letters.Puzzle3 = false;
             Letters.NamePuzzle = "images3/image01_8_5";
             SaveGameData();
             SceneManager.LoadScene("JigsawGame");
         }
 
-        if (bottomBar.GetSceneNumber() == 114 && Letters.Puzzle4 == true)
+        if (bottomBar.GetSceneNumber() == 114 && Letters.Puzzle4 == true && bottomBar.IsLastSentence() && bottomBar.IsCompleted())
         {
             Debug.Log("Паззл 4");
+            ImageCard4.SetActive(true);
             Letters.Puzzle4 = false;
             Letters.NamePuzzle = "images4/image01_8_5";
             SaveGameData();
             SceneManager.LoadScene("JigsawGame");
         }
 
-        if (bottomBar.GetSceneNumber() == 115 && Letters.Puzzle5 == true)
+        if (bottomBar.GetSceneNumber() == 115 && Letters.Puzzle5 == true && bottomBar.IsLastSentence() && bottomBar.IsCompleted())
         {
             Debug.Log("Паззл 5");
+            ImageCard5.SetActive(true);
             Letters.Puzzle5 = false;
             Letters.NamePuzzle = "images5/image01_8_5";
             SaveGameData();
             SceneManager.LoadScene("JigsawGame");
         }
 
-
-
-
-
-
-
-        if (bottomBar.GetSceneNumber() == 1000 && bottomBar.IsLastSentence())
+        if (bottomBar.GetSceneNumber() == 1000 && bottomBar.IsLastSentence() && bottomBar.IsCompleted())
         {
             SaveManager.ClearSavedGame();
             SceneManager.LoadScene(menuScene);
@@ -727,6 +872,54 @@ public class GameController : MonoBehaviour
         animator.SetTrigger("ShowLetter6");
     }
 
+    public void ShowTextLetter8()
+    {
+        ImageLetterText8.SetActive(true);
+        animator.SetTrigger("ShowLetter6");
+    }
+
+    public void ShowTextLetter9()
+    {
+        ImageLetterText9.SetActive(true);
+        animator.SetTrigger("ShowLetter6");
+    }
+
+    public void ShowTextLetter11()
+    {
+        ImageLetterText11.SetActive(true);
+        animator.SetTrigger("ShowLetter6");
+    }
+
+    public void ShowTextCard1()
+    {
+        ImageCardText1.SetActive(true);
+        animator.SetTrigger("ShowLetter6");
+    }
+
+    public void ShowTextCard2()
+    {
+        ImageCardText2.SetActive(true);
+        animator.SetTrigger("ShowLetter6");
+    }
+
+    public void ShowTextCard3()
+    {
+        ImageCardText3.SetActive(true);
+        animator.SetTrigger("ShowLetter6");
+    }
+
+    public void ShowTextCard4()
+    {
+        ImageCardText4.SetActive(true);
+        animator.SetTrigger("ShowLetter6");
+    }
+
+    public void ShowTextCard5()
+    {
+        ImageCardText5.SetActive(true);
+        animator.SetTrigger("ShowLetter6");
+    }
+
     public void HideLetter()
     {
         animator.SetTrigger("HideLetters");
@@ -760,6 +953,11 @@ public class GameController : MonoBehaviour
             letter9 = Letters.letter9,
             letter10 = Letters.letter10,
             letter11 = Letters.letter11,
+            puzzleCard1 = Letters.PuzzleCard1,
+            puzzleCard2 = Letters.PuzzleCard2,
+            puzzleCard3 = Letters.PuzzleCard3,
+            puzzleCard4 = Letters.PuzzleCard4,
+            puzzleCard5 = Letters.PuzzleCard5,
             keyStatus = Letters.GameKeyStatus,
             mapStatus = Letters.GameMapStatus,
             videoStatusInSchool = Letters.VideoStatusInSchool,

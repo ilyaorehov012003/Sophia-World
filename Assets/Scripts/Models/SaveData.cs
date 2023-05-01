@@ -17,6 +17,11 @@ public struct SaveData
     public bool letter11;
     public bool keyStatus;
     public bool mapStatus;
+    public bool puzzleCard1;
+    public bool puzzleCard2;
+    public bool puzzleCard3;
+    public bool puzzleCard4;
+    public bool puzzleCard5;
     public bool videoStatusInSchool;
     public bool videoStatusScene96;
     public bool videoStatusScene124;

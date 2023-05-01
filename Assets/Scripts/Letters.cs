@@ -16,6 +16,11 @@ public class Letters : MonoBehaviour
     public static bool letter9;
     public static bool letter10;
     public static bool letter11;
+    public static bool PuzzleCard1;
+    public static bool PuzzleCard2;
+    public static bool PuzzleCard3;
+    public static bool PuzzleCard4;
+    public static bool PuzzleCard5;
     public static bool GameKeyStatus;
     public static bool GameMapStatus;
     public static bool VideoStatusInSchool;
