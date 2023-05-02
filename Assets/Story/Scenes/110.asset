@@ -20,7 +20,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: dd618287346749e42acc5a7b308f8ead, type: 2}
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "*\u041D\u0438\u043A\u0442\u043E \u043D\u0435 \u043E\u0442\u0432\u0435\u0447\u0430\u0435\u0442*"
+  - text: "*\u0412 \u043A\u043B\u0430\u0441\u0441\u0435 \u0442\u0438\u0448\u0438\u043D\u0430*"
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: c6c568251b5bc13448f5a6698f239af0, type: 2}
     music: {fileID: 0}

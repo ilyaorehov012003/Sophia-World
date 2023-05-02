@@ -31,7 +31,7 @@ MonoBehaviour:
       \xAB\u041C\u0430\u043A\u0431\u0435\u0442\xBB, \xAB\u041A\u043E\u0440\u043E\u043B\u044C
       \u041B\u0438\u0440\xBB."
     audio: {fileID: 0}
-    speaker: {fileID: 11400000, guid: ea80bc757742ece4798e0ca90feb3183, type: 2}
+    speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
     music: {fileID: 0}
     sound: {fileID: 0}
   background: {fileID: 21300000, guid: b1fe5e88e717c6b4990a21b79176ff34, type: 3}

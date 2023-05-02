@@ -39,6 +39,11 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: c43de951c0cf93940a2c6a423fe36fb9, type: 2}
     music: {fileID: 0}
     sound: {fileID: 0}
+  - text: "\u041C\u0435\u043D\u044F \u0437\u043E\u0432\u0443\u0442 \u0421\u043E\u0444\u0438\u044F."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    music: {fileID: 0}
+    sound: {fileID: 0}
   background: {fileID: 21300000, guid: b93a60882b5ded14492e1847d14a5345, type: 3}
   nextScene: {fileID: 11400000, guid: 75e6583b529de324087eb78d67b40ed7, type: 2}
   number: 0

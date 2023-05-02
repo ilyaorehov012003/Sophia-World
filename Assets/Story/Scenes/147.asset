@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 147
   m_EditorClassIdentifier: 
   sentences:
-  - text: "\u0418\u0437\u0432\u0438\u043D\u0438\u0442\u0435, \u0412\u044B \u043C
-      \u043C\u0438\u0441\u044C\u0435 \u041D\u043E\u043A\u0441."
+  - text: "\u0418\u0437\u0432\u0438\u043D\u0438\u0442\u0435, \u0412\u044B \u043C\u0438\u0441\u044C\u0435
+      \u041D\u043E\u043A\u0441."
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 68d33fc373d0fbe418fc823f212c0728, type: 2}
     music: {fileID: 0}

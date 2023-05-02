@@ -43,7 +43,7 @@ MonoBehaviour:
       \u0434\u0435\u0432\u0443\u0448\u043A\u043E\u0439. \u0422\u0432\u043E\u0439
       \u043F\u0430\u043F\u0430 \u0432\u0435\u0440\u043D\u0443\u043B\u0441\u044F."
     audio: {fileID: 0}
-    speaker: {fileID: 11400000, guid: 57bd5cc19e7638042bd82925495d0a67, type: 2}
+    speaker: {fileID: 11400000, guid: 9eaaa04025a29254d81281a0c8d7edc3, type: 2}
     music: {fileID: 0}
     sound: {fileID: 0}
   background: {fileID: 21300000, guid: 587c1f1e6539c18499712f3a6614a5db, type: 3}

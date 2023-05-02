@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: 83
   m_EditorClassIdentifier: 
   sentences:
-  - text: "*\u0421\u043E\u0444\u0438\u044F \u043D\u0430\u0448\u043B\u0430 \u0443\u0434\u043E\u0441\u0442\u043E\u0432\u0435\u0440\u0435\u043D\u0438\u0435*"
+  - text: "*\u0421\u043E\u0444\u0438\u044F \u043D\u0430\u0445\u043E\u0434\u0438\u0442
+      \u0443\u0434\u043E\u0441\u0442\u043E\u0432\u0435\u0440\u0435\u043D\u0438\u0435*"
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: c6c568251b5bc13448f5a6698f239af0, type: 2}
     music: {fileID: 0}
     sound: {fileID: 0}
   background: {fileID: 21300000, guid: 85e85feb628fe3043a6ceb24aca21706, type: 3}
-  nextScene: {fileID: 11400000, guid: 7dd82ecb30ae42b4ba41b619cb67de0b, type: 2}
+  nextScene: {fileID: 11400000, guid: c0c7e35a5e043e0469a056de7fa1a47f, type: 2}
   number: 9

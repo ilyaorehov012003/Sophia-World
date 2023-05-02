@@ -18,4 +18,4 @@ MonoBehaviour:
     nextScene: {fileID: 11400000, guid: 91c8e301f71c09745baa29ca6eb6825b, type: 2}
   - text: "\u0421\u043F\u0440\u043E\u0441\u0438\u0442\u044C \u0443 \u043C\u0430\u043C\u044B
       \u043F\u0440\u043E \u043E\u0442\u043A\u0440\u044B\u0442\u043A\u0443"
-    nextScene: {fileID: 11400000, guid: 769688a5535247d438f1173f41601035, type: 2}
+    nextScene: {fileID: 11400000, guid: ee9dca35223e1784192bf6756b8ad99d, type: 2}

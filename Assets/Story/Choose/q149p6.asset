@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa21d4123d556443abbbad79a10b72f, type: 3}
   m_Name: q149p6
   m_EditorClassIdentifier: 
-  labels: []
+  labels:
+  - text: "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0442\u044C \u043D\u0430\u0441\u0442\u0430\u0438\u0432\u0430\u0442\u044C"
+    nextScene: {fileID: 11400000, guid: f199ab6a5821b2d4495c4622f12cd638, type: 2}
+  - text: "\u041D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C"
+    nextScene: {fileID: 11400000, guid: 62ddb43db9c2f3f499255160194ebbf9, type: 2}

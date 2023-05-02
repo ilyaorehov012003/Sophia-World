@@ -28,7 +28,7 @@ MonoBehaviour:
     sound: {fileID: 0}
   - text: "\u041A\u0430\u043A \u0431\u044B \u044F \u0445\u043E\u0442\u0435\u043B\u0430,
       \u0447\u0442\u043E\u0431\u044B \u0418\u0432\u0430\u0440 \u0432\u0435\u0440\u043D\u0443\u043B\u0441\u044F
-      \u0431\u044B \u043F\u043E\u0441\u043A\u043E\u0440\u0435\u0435..."
+      \u043F\u043E\u0441\u043A\u043E\u0440\u0435\u0435..."
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 0f7829bf947ba734e8b73f9e9a884532, type: 2}
     music: {fileID: 0}

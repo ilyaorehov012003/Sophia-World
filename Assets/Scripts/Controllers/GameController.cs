@@ -91,6 +91,7 @@ public class GameController : MonoBehaviour
     private bool isWork7 = true;
     private bool isWork8 = true;
     private bool isWork9 = true;
+    private bool isWork91 = true;
     private bool isWork11 = true;
 
     public GameObject Abstract1;
@@ -106,6 +107,8 @@ public class GameController : MonoBehaviour
     public GameObject Abstract11;
     public GameObject Abstract12;
     public GameObject Abstract13;
+
+    public GameObject Telegram;
 
     //private bool gameKey = true;
 
@@ -382,6 +385,16 @@ public class GameController : MonoBehaviour
             Abstract13.SetActive(false);
         }
 
+        if (bottomBar.GetSceneNumber() == 123456)
+        {
+            Telegram.SetActive(true);
+        }
+
+        if (bottomBar.GetSceneNumber() != 123456)
+        {
+            Telegram.SetActive(false);
+        }
+
         if (bottomBar.GetSceneNumber() == 1 && isWork1 == true)
         {
             isWork1 = false;
@@ -440,6 +453,12 @@ public class GameController : MonoBehaviour
         {
             isWork11 = false;
             ShowTextLetter11();
+        }
+
+        if (bottomBar.GetSceneNumber() == 202 && isWork91 == true)
+        {
+            isWork91 = false;
+            ShowTextLetter9();
         }
 
         if (bottomBar.GetSceneNumber() == 100 && Letters.GameKeyStatus == true)
@@ -622,7 +641,7 @@ public class GameController : MonoBehaviour
 
         if (state == State.IDLE) {
             //if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
-            if (NextSentence.nextSentenceStatus && NextSentence.nextSceneStatus == false)
+            if (NextSentence.nextSentenceStatus)// && NextSentence.nextSceneStatus == false)
             {
                 NextSentence.nextSentenceStatus = false;
                 if (bottomBar.IsCompleted())
@@ -930,6 +949,11 @@ public class GameController : MonoBehaviour
         animator.SetTrigger("ShowLettersPart2");
     }
 
+    public void OpenTelegram()
+    {
+        Application.OpenURL("https://t.me/ilyaorehov012003");
+    }
+
     public void SaveGameData() //функция сохранения игровых данных
     {
         List<int> historyIndicies = new List<int>();
@@ -964,6 +988,11 @@ public class GameController : MonoBehaviour
             videoStatusScene96 = Letters.VideoStatusScene96,
             videoStatusScene124 = Letters.VideoStatusScene124,
             videoStatusScene175 = Letters.VideoStatusScene175,
+            puzzle1 = Letters.Puzzle1,
+            puzzle2 = Letters.Puzzle2,
+            puzzle3 = Letters.Puzzle3,
+            puzzle4 = Letters.Puzzle4,
+            puzzle5 = Letters.Puzzle5,
             namePuzzle = Letters.NamePuzzle
         };
         SaveManager.SaveGame(data);

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 149p12-2
   m_EditorClassIdentifier: 
   sentences:
-  - text: "\u041F\u0440\u043E\u0449\u0430\u0439\u0442\u0435."
+  - text: ...
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: dd618287346749e42acc5a7b308f8ead, type: 2}
     music: {fileID: 0}

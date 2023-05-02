@@ -18,13 +18,11 @@ MonoBehaviour:
       \u0425\u0438\u043B\u044C\u0434\u0443?"
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
-    actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
   - text: "\u0425\u0438\u043B\u044C\u0434\u0430..."
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 0f7829bf947ba734e8b73f9e9a884532, type: 2}
-    actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
   - text: "\u041D\u0435\u0442, \u044F \u043D\u0435 \u0437\u043D\u0430\u044E \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u0430
@@ -32,9 +30,8 @@ MonoBehaviour:
       \u0410 \u043F\u043E\u0447\u0435\u043C\u0443 \u0442\u044B \u0441\u043F\u0440\u0430\u0448\u0438\u0432\u0430\u0435\u0448\u044C?"
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 0f7829bf947ba734e8b73f9e9a884532, type: 2}
-    actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
   background: {fileID: 21300000, guid: 8560ecdcf48d46b489667069716018ea, type: 3}
-  nextScene: {fileID: 11400000, guid: 3115ae3e64f7fcd4a93666cdfc550139, type: 2}
+  nextScene: {fileID: 11400000, guid: 769688a5535247d438f1173f41601035, type: 2}
   number: 0

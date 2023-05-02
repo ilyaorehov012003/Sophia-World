@@ -65,7 +65,7 @@ MonoBehaviour:
     music: {fileID: 0}
     sound: {fileID: 0}
   - text: "\u041D\u0435\u0442, \u044D\u0442\u043E \u043D\u0435\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E,
-      \u044D\u0442\u043E \u0443\u0436\u0435 \u0438\u0441\u0442\u043E\u0440\u0438\u044F."
+      \u044D\u0442\u043E \u0443\u0436\u0435 \u0438\u0441\u0442\u043E\u0440\u0438\u044F..."
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
     music: {fileID: 0}

@@ -18,26 +18,17 @@ MonoBehaviour:
       \u043C\u043E\u0433\u043B\u0430 \u0432\u0441\u043F\u043E\u043C\u043D\u0438\u0442\u044C!"
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 0f7829bf947ba734e8b73f9e9a884532, type: 2}
-    actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
   - text: "*\u041C\u0430\u043C\u0430 C\u043E\u0444\u0438\u0438 \u043D\u0430\u0447\u0438\u043D\u0430\u0435\u0442
       \u0447\u0442\u043E-\u0442\u043E \u0438\u0433\u0440\u0430\u0442\u044C*"
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: c6c568251b5bc13448f5a6698f239af0, type: 2}
-    actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
   - text: ...
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: c6c568251b5bc13448f5a6698f239af0, type: 2}
-    actions: []
-    music: {fileID: 0}
-    sound: {fileID: 0}
-  - text: "*\u0421\u043E\u0444\u0438\u044F \u0441\u043C\u0435\u0435\u0442\u0441\u044F*"
-    audio: {fileID: 0}
-    speaker: {fileID: 11400000, guid: c6c568251b5bc13448f5a6698f239af0, type: 2}
-    actions: []
     music: {fileID: 0}
     sound: {fileID: 0}
   background: {fileID: 21300000, guid: d7395a11b9a7f29418b131171e67ae8d, type: 3}
