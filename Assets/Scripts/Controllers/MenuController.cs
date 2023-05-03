@@ -119,4 +119,9 @@ public class MenuController : MonoBehaviour
         soundsValue.SetText(value + "%");
         soundsMixer.SetFloat("volume", -50 + value / 2);
     }
+
+    public void OpenTelegram()
+    {
+        Application.OpenURL("https://t.me/+8oV8wigoT5I4Mjli");
+    }
 }

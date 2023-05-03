@@ -951,7 +951,7 @@ public class GameController : MonoBehaviour
 
     public void OpenTelegram()
     {
-        Application.OpenURL("https://t.me/ilyaorehov012003");
+        Application.OpenURL("https://t.me/+8oV8wigoT5I4Mjli");
     }
 
     public void SaveGameData() //функция сохранения игровых данных

@@ -28,7 +28,7 @@ MonoBehaviour:
     sound: {fileID: 0}
   - text: "\u0421 \u0443\u0432\u0430\u0436\u0435\u043D\u0438\u0435\u043C, \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u044F
       siv games"
-    audio: {fileID: 0}
+    audio: {fileID: 8300000, guid: 3a466e9036d7058459c08293b705cff4, type: 3}
     speaker: {fileID: 11400000, guid: c6c568251b5bc13448f5a6698f239af0, type: 2}
     music: {fileID: 0}
     sound: {fileID: 0}

@@ -27,7 +27,7 @@ MonoBehaviour:
     music: {fileID: 0}
     sound: {fileID: 0}
   - text: ...
-    audio: {fileID: 0}
+    audio: {fileID: 8300000, guid: 00384b56665ab6f49bc5791bcbd73a8d, type: 3}
     speaker: {fileID: 11400000, guid: c6c568251b5bc13448f5a6698f239af0, type: 2}
     music: {fileID: 0}
     sound: {fileID: 0}

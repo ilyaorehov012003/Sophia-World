@@ -17,7 +17,7 @@ MonoBehaviour:
       \u0432\u0441\u0435\u043B\u0435\u043D\u043D\u0430\u044F?"
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
-    music: {fileID: 0}
+    music: {fileID: 8300000, guid: 992959942241ded4888bc80feb28ed29, type: 3}
     sound: {fileID: 0}
   - text: "\u041E\u043D\u0430 \u0431\u0435\u0441\u043A\u043E\u043D\u0435\u0447\u043D\u0430..."
     audio: {fileID: 0}

@@ -35,7 +35,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: c9e2b01f1876a6147bb74124d1f94d2c, type: 2}
     music: {fileID: 0}
     sound: {fileID: 0}
-  - text: "\u0411\u044B\u0442\u044C \u0438\u043B\u0438 \u043D\u0435 \u0431\u044B\u0442\u044C?
+  - text: "\u0411\u044B\u0442\u044C \u0438\u043B\u0438 \u043D\u0435 \u0431\u044B\u0442\u044C.
       \u0412\u043E\u0442 \u0432 \u0447\u0451\u043C \u0432\u043E\u043F\u0440\u043E\u0441."
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: ea80bc757742ece4798e0ca90feb3183, type: 2}

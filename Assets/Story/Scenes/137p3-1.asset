@@ -45,6 +45,6 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
     music: {fileID: 0}
     sound: {fileID: 0}
-  background: {fileID: 21300000, guid: 5cb04adfb0c063140ba819be3e7717f9, type: 3}
+  background: {fileID: 21300000, guid: 90c7f6afdd4e19842b746dea06c136cd, type: 3}
   nextScene: {fileID: 11400000, guid: 81ba31e81bba79740abfc1393a46b19f, type: 2}
   number: 0

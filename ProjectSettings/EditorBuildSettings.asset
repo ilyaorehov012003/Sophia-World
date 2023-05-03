@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VideoScene124.unity
     guid: 453cfcb1e526a854c949d6210ccf3f73
+  - enabled: 1
+    path: Assets/Scenes/VideoScene175.unity
+    guid: ca3b2eebb4a4a214ebb3f89f0e4fc04e
   m_configObjects: {}

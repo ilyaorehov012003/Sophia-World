@@ -39,7 +39,7 @@ MonoBehaviour:
     music: {fileID: 0}
     sound: {fileID: 0}
   - text: "\u0415\u0448\u044C\u0442\u0435, \u043F\u0435\u0439\u0442\u0435, \u0432\u0435\u0441\u0435\u043B\u0438\u0442\u0435\u0441\u044C!
-      \u0411\u043E\u043B\u044C\u0448\u0435 \u0441\u043F\u0430\u0441\u0438\u0431\u043E
+      \u0411\u043E\u043B\u044C\u0448\u043E\u0435 \u0441\u043F\u0430\u0441\u0438\u0431\u043E
       \u0437\u0430 \u0432\u043D\u0438\u043C\u0430\u043D\u0438\u0435."
     audio: {fileID: 0}
     speaker: {fileID: 11400000, guid: 36777004741178d44be48303640be805, type: 2}
